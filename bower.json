@@ -1,0 +1,16 @@
+{
+  "name": "ctf",
+  "version": "0.0.1",
+  "dependencies": {
+    "consolelog": "~2.0.1",
+    "html5shiv": "~3.7.2",
+    "modernizr": "~2.8.1",
+    "normalize.css": "~3.0.1",
+    "jquery": "~1.11.1",
+    "materialize": "~0.97.0"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": ">=2.1.1"
+  }
+}

@@ -1,0 +1,147 @@
+{# Homepage Markup #}
+{% extends './layouts/base.swig' %}
+{% block header %}
+<h1 class="header center green-text">FAQ</h1>
+<div class="row center">
+  <h5 class="header col s12 light"></h5>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <ul>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>What is a CTF?</div>
+          <div>
+            <p>A CTF(short for Capture The Flag) is a computer security competition. Contestants are presented with challenges, which test their creativity and technical skills, along with their general problems solving ability. When a problem is solved, it yields a string (the flag), which can be submitted to the scoring server. CTFs are awesome to get started in hacking, and even have <a href="https://ctftime.org/">world competitions</a></p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>Who is this for?</div>
+          <div>
+            <p>Generally, this CTF is meant for all audiences which are interested in learning hacking and computer security.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>Why?</div>
+          <div>
+            <p>This CTF is mostly made for people to have fun and learn new things! But at the same time, to increase awareness of vulnerabilities, and teach people to think defensively in terms of computer security.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-device-access-time"></i>When is this?</div>
+          <div>
+            <p>The competition will begin on August 10th at 00:00:00 GMT (<a target="_blank" href="http://www.convert-unix-time.com/?t=1439164800">1439164800</a>) and end on August 23rd at 23:59:59 GMT (<a target="_blank" href="http://www.convert-unix-time.com/?t=1440374400">1440374400</a>). Click on the links to see what it would be in your time zone.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>Where is this?</div>
+          <div>
+          <p>This competition is entirely online, and participants can physically play from anywhere.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-image-looks-one"></i>Is the competition difficult?</div>
+          <div>
+            <p>Yes, but not too difficult! There are tons of challenges, some of which we expect everyone to be able to solve, and some of which we expect nobody to solve. If the competition is too hard, it won't be fun or educational. If it is too easy, the same applies. Our goal is that most of the challenges are solvable with somewhat little knowledge.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-public"></i>Where can I start learning?</div>
+          <div>
+            <p>Don't panic! We aren't expecting contestants to be proficient in computer security, but we do reccomend being comfortable with computer programming. As long as contestants are interested, they should be able to learn something and have fun regardless of background. </p>
+            <p> We reccomend knowing JavaScript, HTML, Python, along with being able to read Java and C code.</p>
+            <p>While this competition will provide you with hints along the way, you can begin learning by reading this <a target="_blank" href="http://bobbyluig.gitbooks.io/csc-learn/">GitBook</a> by CAMS CSC. You can also look at other CTF competitions like <a href="http://picoctf.com/">PicoCTF</a> or try out sample challenges on the <a href="about.html">About</a> page.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-public"></i>What do i need to compete?</div>
+          <div>
+            <p>Participating in the competition requires only a computer with a modern web browser, and being able to install applications. Participation from personal laptops is encouraged.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-hardware-computer"></i>What are the challenges like??</div>
+          <div>
+            <p>The challenges will fall into one of the following categories: Cryptography, Forensics, Exploitation, Programming, Reconnaissance, and Miscellaneous.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-action-help"></i>How do I participate?</div>
+          <div>
+            <p>Team registration is now open. Click <a href="http://play.icec.tf/">here</a> to register.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-school"></i>Who can participate?</div>
+          <div>
+            <p>Anyone can participate. However, only teams composed of students will be eligible for awards.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-editor-attach-money"></i>Are there prizes?</div>
+          <div>
+            <p>Aside from knowledge, there will be <a href="about.html#prizes">prizes</a> awarded to top placing teams.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-editor-attach-money"></i>How are problems scored? (How do we win?)</div>
+          <div>
+            <p>The competition is split into four stages.</p>
+            <ul class="list-bullets">
+              <li><b>Stage 1</b> is meant for participants which don't neccessarily have programming experience, but are good at using a computer.</li>
+              <li><b>Stage 2</b> is meant for participants which have some programming experience</li>
+              <li><b>Stage 3</b> is meant for participants which have a strong background in programming</li>
+              <li><b>Stage 4</b> consists of a diverse set of problems which can range from difficult to (almost) unsolvable</li>
+            </ul>
+            <p>
+              Note that not every challenge in a stage must be solved before advancing to the next. The problems in a stage are structured so that the next stage can be unlocked while avoiding an entire category.
+            </p>
+            <p>
+            Each stage contains a list of problems which are each worth a fixed number of points based on its difficulty. When a problem is solved, you send the flag to our scoring server, which adds the problem's points to your team's score. The points for a problem does not change as more teams solve it. Once the competition is over, the team(s) with the highest scores are the winners. We calculate the scores independent of time, but time will be used as a tie breaker.
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-av-not-interested"></i>Can I cheat?</div>
+          <div>
+            <p>...no, really?</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-av-not-interested"></i>What is defined as cheating?</div>
+          <div>
+            <p>Attacking the scoring server, other teams, or machines which are not targets is cheating. This includes breaking into such machines and denying others access to them. Sharing flags or giving overly revealing hints to other teams is cheating, and so is being assisted by people outside the team. Note that using tools from the internet along with information is fine, but specifically asking people on the internet to help you solve the problem is cheating. We encourage you to solve problems on your own using all available resources, but you should solve them yourselves</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-group-add"></i>How many people can be on a team?</div>
+          <div>
+            <p>Teams can consist of 1-5 contestants.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-group-add"></i>Can I create more than 1 team?</div>
+          <div>
+            <p>No. There is no point in creating multiple accounts. Teams found with duplicated accounts will be disqualified.</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-image-exposure-zero"></i>How much does this cost?</div>
+          <div>
+            <p>Nothing!</p>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="mdi-social-group-add"></i>Does this competition condone hacking?</div>
+          <div>
+            <p>This of course depends on the definition of hacking. We encourage exploring computer systems, and learning how the computer works - when we say hacking, this is what we mean. We do not condone hacking in the sense of breaking into machines illegally, stealing personal information, and launching DDoS attacks, this type of hacking is illegal, and we do not encourage it.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<br>
+{% endblock %}

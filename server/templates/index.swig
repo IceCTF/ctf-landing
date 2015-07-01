@@ -1,0 +1,75 @@
+{# Homepage Markup #}
+{% extends './layouts/base.swig' %}
+{% block header %}
+<h1 class="header center green-text"><img src="images/logos/icectf.png" alt="IceCTF"/></h1>
+<div class="row center">
+  <h5 class="header col s12 light">A Capture the Flag competition</h5>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center indigo-text text-accent-2"><i class="mdi-content-flag"></i></h2>
+          <h5 class="center">Hack</h5>
+
+          <p class="light">In this game of wits, you and your team will solve a variety of security and computer science based challenges to earn points. Every challenge will yield a flag - a recognizable string of characters. Your team can use those flags for points on the scoreboard.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center indigo-text text-accent-2"><i class="mdi-hardware-desktop-windows"></i></h2>
+          <h5 class="center">Learn</h5>
+
+          <p class="light">Learn by doing! Learning through practice is one of the most fun ways to learn! Team up with some fun people, and start learning invaluable skills like exploitation, decryption and hacking through a hands-on approach.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center indigo-text text-accent-2"><i class="mdi-social-people"></i></h2>
+          <h5 class="center">Cooperate</h5>
+          <p class="light">Create teams of up to 5 members. You will need all the security and computer science skills you have. There are many challenges and categories. Diversify your team and try to get people with different strengths. Remember, the more people there are on your team, the less blame each person receives.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m6">
+        <div class="icon-block">
+          <h2 class="center indigo-text text-accent-2"><i class="mdi-action-swap-horiz"></i></h2>
+          <h5 class="center">Win</h5>
+          <p class="light">At the end of the day, this is a contest. Hack, break and decrypt your way to the top to win some awesome prizes! Prizes will be given for best team performance, along with some other categories, so do your best!</p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  {# <div class="section">
+    <div class="row center">
+      <h5 class="header col s12 light">Stay updated! Subscribe to updates.</h5>
+    </div>
+    <div class="row">
+      <form method="post" action="http://camsctf.us10.list-manage.com/subscribe/post?u=fca31272a4fc22a114563f0ce&amp;id=0258f882fd" class="col s12 center">
+        <div class="row">
+          <div class="input-field col s12 l6 offset-l3">
+            <i class="mdi-content-mail prefix"></i>
+            <label for="mce-EMAIL">Email Address</label>
+            <input type="email" value="" name="EMAIL" class="validate" id="mce-EMAIL" required>
+          </div>
+        </div>
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_fca31272a4fc22a114563f0ce_0258f882fd" tabindex="-1" value=""></div>
+        <button class="btn waves-effect waves-light indigo accent-2" type="submit" name="action">Subscribe
+          <i class="mdi-content-send right"></i>
+        </button>
+      </form>
+    </div>
+  </div> #}
+
+</div>
+<br>
+{% endblock %}
