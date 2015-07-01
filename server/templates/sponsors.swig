@@ -1,21 +1,20 @@
 {# Homepage Markup #}
 {% extends './layouts/base.swig' %}
 {% block header %}
-<h1 class="header center green-text">Sponsors</h1>
+<h1 class="header center">Sponsors</h1>
 <div class="row center">
-  <h5 class="header col s12 light">This competition would not be possible without the generous support of our sponsors.</h5>
+  <h5 class="header col s12 light">We would like to thank our sponsors for their support!</h5>
 </div>
 {% endblock %}
 {% block content %}
 <div class="container">
 
   <div class="section">
-    <h4 class="col s12 center">Sponsors</h4>
     <div class="row">
       <div class="col m6 s12">
         <div class="card">
           <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="logos/ptso.png">
+            <img class="activator" src="images/logos/ru.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">Reykjavik University<i class="mdi-navigation-more-vert right"></i></span>
@@ -28,10 +27,10 @@
         </div>
       </div>
 
-      <div class="col m6 s12">
+      <div class="col m6 s12 syndis">
         <div class="card">
-          <div class="card-image waves-effect waves-block waves-light">
-            <img class="activator" src="logos/foundation.png">
+          <div class="card-image waves-effect waves-block waves-light black">
+            <img class="activator" src="images/logos/syndis.png">
           </div>
           <div class="card-content">
             <span class="card-title activator grey-text text-darken-4">Syndis<i class="mdi-navigation-more-vert right"></i></span>
@@ -54,7 +53,7 @@
     </div>
     <div class="row center">
       <ul>
-        <li>Ýmir Vigfússon, for being generally awesome!</li>
+        <li>Ýmir Vigfússon, for being awesome!</li>
       </ul>
     </div>
   </div>

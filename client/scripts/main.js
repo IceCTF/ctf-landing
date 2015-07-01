@@ -2,6 +2,8 @@
 
 (function() {
 
-  console.log('Welcome to Yeogurt');
+  $(function(){
+    $('.button-collapse').sideNav();
+  });
 
 })();

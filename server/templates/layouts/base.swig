@@ -52,7 +52,7 @@
     <![endif]-->
 
     <header class="blue-grey">
-      <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav hide-on-large-only"><i class="medium mdi-navigation-menu indigo-text text-accent-2"></i></a></div>
+      <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav hide-on-large-only"><i class="medium mdi-navigation-menu white-text text-accent-2"></i></a></div>
       <ul id="nav-mobile" class="side-nav fixed blue-grey lighten-5">
         <li class="logo"><a id="logo-container" href="/" class="brand-logo">
           <img id="front-page-logo" src="images/logos/logo.png" alt="" /></a></li>
@@ -81,7 +81,7 @@
 
     {% block modals %}{% endblock %}
 
-    <footer class="deep-orange page-footer">
+    <footer class="blue-grey darken-3 page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">

@@ -1,9 +1,9 @@
 {# Homepage Markup #}
 {% extends './layouts/base.swig' %}
 {% block header %}
-<h1 class="header center green-text">Sample Challenges</h1>
+<h1 class="header center">Sample Challenges</h1>
 <div class="row center">
-  <h5 class="header col s12 light">Try a few challenges to get acquainted with the style of this competition.</h5>
+  <h5 class="header col s12 light">Try a few challenges to get acquainted with the style of this competition</h5>
 </div>
 {% endblock %}
 {% block content %}
@@ -24,6 +24,8 @@
         <p class="light">I believe the super secret flag is right <b>here<!-- {sup3r_s3cr3t_f1ag} --></b>. What? You don't see it? Well I'm pretty sure I left it back there though. Have you tried looking more closely at the word "here"? It's probably easier if you're on a computer.</p>
       </div>
     </div>
+  </div>
+  <div class="row">
     <div class="col s12 l6">
       <div class="icon-block">
         <h3 class="center indigo-text text-accent-2"><a id="fore" href="#solutions"><i class="mdi-action-search"></i></a></h3>

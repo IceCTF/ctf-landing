@@ -1,7 +1,7 @@
 {# Homepage Markup #}
 {% extends './layouts/base.swig' %}
 {% block header %}
-<h1 class="header center green-text">About</h1>
+<h1 class="header center">About</h1>
 <div class="row center">
   <h5 class="header col s12 light">About this competition</h5>
 </div>

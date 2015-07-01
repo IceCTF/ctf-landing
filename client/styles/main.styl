@@ -5,8 +5,15 @@
 }
 
 #index-banner {
-  background-color: #111;
-  color: white;
+  background-color: #79c0dd;
+  color: #111;
+  h5 {
+    color: #333;
+  }
+  img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .icon-block {
@@ -42,9 +49,10 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
 
 ul.side-nav.fixed li.logo {
   text-align: center;
-  margin-top: 32px;
-  margin-bottom: 16px;
-  border-bottom: 1px solid #ddd;
+  padding-top: 32px;
+  padding-bottom: 16px;
+  // border-bottom: 1px solid #ddd;
+  background-color: #81d4fa;
 }
 
 ul.side-nav.fixed li.logo:hover {
@@ -78,11 +86,14 @@ ul.side-nav.full li, ul.side-nav.fixed li {
 }
 
 ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
-  background-color: #edf0fe;
+  background-color: #90a4ae;
 }
 
 ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #a9b6fe;
+  background-color: #37474f;
+  a {
+    color: white;
+  }
 }
 
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, textarea:focus.materialize-textarea {
@@ -142,6 +153,10 @@ b {
 
 #thanks {
   font-size: 1.1em;
+}
+
+.syndis .card-image {
+  padding: 40px 20px;
 }
 
 

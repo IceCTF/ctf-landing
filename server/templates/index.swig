@@ -27,7 +27,8 @@
           <p class="light">Learn by doing! Learning through practice is one of the most fun ways to learn! Team up with some fun people, and start learning invaluable skills like exploitation, decryption and hacking through a hands-on approach.</p>
         </div>
       </div>
-
+    </div>
+    <div class="row">
       <div class="col s12 m6">
         <div class="icon-block">
           <h2 class="center indigo-text text-accent-2"><i class="mdi-social-people"></i></h2>
