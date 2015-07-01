@@ -12,7 +12,7 @@
     <div class="row">
       <ul>
         <li>
-          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>What is a CTF?</div>
+          <div class="collapsible-header"><i class="mdi-action-info-outline"></i>What is a CTF?</div>
           <div>
             <p>A CTF(short for Capture The Flag) is a computer security competition. Contestants are presented with challenges, which test their creativity and technical skills, along with their general problems solving ability. When a problem is solved, it yields a string (the flag), which can be submitted to the scoring server. CTFs are awesome to get started in hacking, and even have <a href="https://ctftime.org/">world competitions</a></p>
           </div>
@@ -24,7 +24,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>Why?</div>
+          <div class="collapsible-header"><i class="mdi-action-favorite"></i>Why?</div>
           <div>
             <p>This CTF is mostly made for people to have fun and learn new things! But at the same time, to increase awareness of vulnerabilities, and teach people to think defensively in terms of computer security.</p>
           </div>
@@ -36,7 +36,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>Where is this?</div>
+          <div class="collapsible-header"><i class="mdi-av-web"></i>Where is this?</div>
           <div>
           <p>This competition is entirely online, and participants can physically play from anywhere.</p>
           </div>
@@ -56,13 +56,13 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-social-public"></i>What do i need to compete?</div>
+          <div class="collapsible-header"><i class="mdi-hardware-computer"></i>What do i need to compete?</div>
           <div>
             <p>Participating in the competition requires only a computer with a modern web browser, and being able to install applications. Participation from personal laptops is encouraged.</p>
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-hardware-computer"></i>What are the challenges like??</div>
+          <div class="collapsible-header"><i class="mdi-communication-comment"></i>What are the challenges like?</div>
           <div>
             <p>The challenges will fall into one of the following categories: Cryptography, Forensics, Exploitation, Programming, Reconnaissance, and Miscellaneous.</p>
           </div>
@@ -86,7 +86,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-editor-attach-money"></i>How are problems scored? (How do we win?)</div>
+          <div class="collapsible-header"><i class="mdi-action-grade"></i>How are problems scored? (How do we win?)</div>
           <div>
             <p>The competition is split into four stages.</p>
             <ul class="list-bullets">
@@ -104,7 +104,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-av-not-interested"></i>Can I cheat?</div>
+          <div class="collapsible-header"><i class="mdi-action-thumb-down"></i>Can I cheat?</div>
           <div>
             <p>...no, really?</p>
           </div>
@@ -122,7 +122,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-social-group-add"></i>Can I create more than 1 team?</div>
+          <div class="collapsible-header"><i class="mdi-social-plus-one"></i>Can I create more than 1 team?</div>
           <div>
             <p>No. There is no point in creating multiple accounts. Teams found with duplicated accounts will be disqualified.</p>
           </div>
@@ -134,7 +134,7 @@
           </div>
         </li>
         <li>
-          <div class="collapsible-header"><i class="mdi-social-group-add"></i>Does this competition condone hacking?</div>
+          <div class="collapsible-header"><i class="mdi-social-whatshot"></i>Does this competition condone hacking?</div>
           <div>
             <p>This of course depends on the definition of hacking. We encourage exploring computer systems, and learning how the computer works - when we say hacking, this is what we mean. We do not condone hacking in the sense of breaking into machines illegally, stealing personal information, and launching DDoS attacks, this type of hacking is illegal, and we do not encourage it.</p>
           </div>

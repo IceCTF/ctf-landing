@@ -108,7 +108,7 @@
               </li>
               <li><a class="white-text" href="https://www.facebook.com/groups/1418538045055499/">Facebook</a>
               </li>
-              <li><a class="white-text" href="mailto:contact@icec.tf">Email</a>
+              <li><a class="white-text">Email: icectf <span class="hide">ai90jsf90as</span>[at]<span class="hide">bllja9023j</span> icec.tf</a>
               </li>
             </ul>
           </div>
