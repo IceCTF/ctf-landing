@@ -24,6 +24,7 @@ var routes = function(app) {
   app.get('/about', indexController.about);
   app.get('/faq', indexController.faq);
   app.get('/contact', indexController.contact);
+  app.post('/contact', indexController.contact_post);
   app.get('/sponsors', indexController.sponsors);
   app.get('/challenges', indexController.challenges);
 

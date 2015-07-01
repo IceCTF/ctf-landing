@@ -32,7 +32,7 @@
     <p>We can't really stop you from not obeying the rules. However, infractions <b>will</b> result in disqualification depending on the severity.</p>
     <ul>
       <li>Do not share flags with other teams.</li>
-      <li>Be fair. Obey the team size limit of 5.</li>
+      <li>Be fair. Obey the team size limit of 4.</li>
       <li>Duplicate teams composed of the same individuals are not allowed.</li>
       <li>Try to solve problems rather than brute-forcing the submission system. The probability that you will succeed is very small. Seriously.</li>
       <li>Do not DDoS or DoS. Sending continuous requests when a challenge calls for such methods is perfectly acceptable. If you know how to perform these attacks, put your skills to better use by solving the challenges. Don't ruin the fun for everyone.</li>

@@ -55,7 +55,7 @@
       <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav hide-on-large-only"><i class="medium mdi-navigation-menu white-text text-accent-2"></i></a></div>
       <ul id="nav-mobile" class="side-nav fixed blue-grey lighten-5">
         <li class="logo"><a id="logo-container" href="/" class="brand-logo">
-          <img id="front-page-logo" src="images/logos/logo.png" alt="" /></a></li>
+          <img id="front-page-logo" src="/images/logos/logo.png" alt="" /></a></li>
         <li {{active('Home', title)}}><a href="/">Home</a></li>
         <li><a href="#">Play</a></li>
         <li {{active('About', title)}}><a href="/about">About</a></li>

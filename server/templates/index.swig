@@ -12,7 +12,7 @@
     <div class="row">
       <div class="col s12 m6">
         <div class="icon-block">
-          <h2 class="center indigo-text text-accent-2"><i class="mdi-content-flag"></i></h2>
+          <h2 class="center icon"><i class="mdi-content-flag"></i></h2>
           <h5 class="center">Hack</h5>
 
           <p class="light">In this game of wits, you and your team will solve a variety of security and computer science based challenges to earn points. Every challenge will yield a flag - a recognizable string of characters. Your team can use those flags for points on the scoreboard.</p>
@@ -21,7 +21,7 @@
 
       <div class="col s12 m6">
         <div class="icon-block">
-          <h2 class="center indigo-text text-accent-2"><i class="mdi-hardware-desktop-windows"></i></h2>
+          <h2 class="center icon"><i class="mdi-hardware-desktop-windows"></i></h2>
           <h5 class="center">Learn</h5>
 
           <p class="light">Learn by doing! Learning through practice is one of the most fun ways to learn! Team up with some fun people, and start learning invaluable skills like exploitation, decryption and hacking through a hands-on approach.</p>
@@ -31,15 +31,15 @@
     <div class="row">
       <div class="col s12 m6">
         <div class="icon-block">
-          <h2 class="center indigo-text text-accent-2"><i class="mdi-social-people"></i></h2>
+          <h2 class="center icon"><i class="mdi-social-people"></i></h2>
           <h5 class="center">Cooperate</h5>
-          <p class="light">Create teams of up to 5 members. You will need all the security and computer science skills you have. There are many challenges and categories. Diversify your team and try to get people with different strengths. Remember, the more people there are on your team, the less blame each person receives.</p>
+          <p class="light">Create teams of up to 4 members. You will need all the security and computer science skills you have. There are many challenges and categories. Diversify your team and try to get people with different strengths. Remember, the more people there are on your team, the less blame each person receives.</p>
         </div>
       </div>
 
       <div class="col s12 m6">
         <div class="icon-block">
-          <h2 class="center indigo-text text-accent-2"><i class="mdi-action-swap-horiz"></i></h2>
+          <h2 class="center icon"><i class="mdi-action-swap-horiz"></i></h2>
           <h5 class="center">Win</h5>
           <p class="light">At the end of the day, this is a contest. Hack, break and decrypt your way to the top to win some awesome prizes! Prizes will be given for best team performance, along with some other categories, so do your best!</p>
         </div>

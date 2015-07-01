@@ -118,7 +118,7 @@
         <li>
           <div class="collapsible-header"><i class="mdi-social-group-add"></i>How many people can be on a team?</div>
           <div>
-            <p>Teams can consist of 1-5 contestants.</p>
+            <p>Teams can consist of 1-4 contestants.</p>
           </div>
         </li>
         <li>

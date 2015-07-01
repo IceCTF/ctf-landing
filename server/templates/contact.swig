@@ -10,27 +10,24 @@
 <div class="container">
   <div class="section">
     <div class="row">
-      <form class="col s12" action="http://camsctf.com/contact.php">
-        <div class="row">
-          <div class="input-field col s12 m6 l6">
-            <input id="first_namecontact" name="first" type="text" class="validate">
-            <label for="first_namecontact" class="">First Name</label>
-          </div>
-          <div class="input-field col s12 m6 l6">
-            <input id="last_namecontact" name="last" type="text" class="validate">
-            <label for="last_namecontact">Last Name</label>
-          </div>
-        </div>
+      <form class="col s12" action="/contact">
+        <input type="hidden" name="" />
         <div class="row">
           <div class="input-field col s12">
-            <textarea name="message" class="materialize-textarea validate"></textarea>
-            <label>Message</label>
+            <input id="full_namecontact" name="name" type="text" class="validate">
+            <label for="full_namecontact" class="">Full Name</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
             <input id="email" name="email" type="email" class="validate">
             <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea name="message" class="materialize-textarea validate"></textarea>
+            <label>Message</label>
           </div>
         </div>
         <button class="btn waves-effect waves-light indigo accent-2" type="submit" name="action">Submit
