@@ -1,0 +1,61 @@
+{% extends "main.html" %}
+{% set active_page = 'About' %}
+{% block header %}
+<h1 class="header center">Sponsors</h1>
+<div class="row center">
+  <h5 class="header col s12 light">We would like to thank our sponsors for their support!</h5>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+
+  <div class="section">
+    <div class="row">
+      <div class="col m6 s12">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="images/logos/ru.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Reykjavik University<i class="mdi-navigation-more-vert right"></i></span>
+            <p><a href="http://ru.is/" target="_blank">Website</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Reykjavik University<i class="mdi-navigation-close right"></i></span>
+            <p>RU</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col m6 s12 syndis">
+        <div class="card">
+          <div class="card-image waves-effect waves-block waves-light black">
+            <img class="activator" src="images/logos/syndis.png">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Syndis<i class="mdi-navigation-more-vert right"></i></span>
+            <p><a href="http://syndis.is/" target="_blank">Website</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Syndis<i class="mdi-navigation-close right"></i></span>
+            <p>Syndis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="section" id="thanks">
+    <div class="row center">
+      <h5 class="header col s12 light">IceCTF would also like to specially thank the following people: </h5>
+    </div>
+    <div class="row center">
+      <ul>
+        <li>Ýmir Vigfússon, for being awesome!</li>
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

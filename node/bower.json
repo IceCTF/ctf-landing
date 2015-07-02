@@ -1,0 +1,13 @@
+{
+  "name": "ctf",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "materialize": "~0.97.0",
+    "timecircles": "jamiees2/TimeCircles#master"
+  },
+  "devDependencies": {},
+  "resolutions": {
+    "jquery": ">=2.1.1"
+  }
+}

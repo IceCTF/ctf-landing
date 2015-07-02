@@ -1,0 +1,47 @@
+{% extends "main.html" %}
+{% set active_page = 'About' %}
+
+{% block header %}
+<h1 class="header center">About</h1>
+<div class="row center">
+  <h5 class="header col s12 light">About this competition</h5>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="section" id="prizes">
+    <h5>Awards and Prizes</h5>
+    <p>We know that all teams need more than just the notion of learning to be motivated. This is why we have some awesome awards thanks to our generous sponsors.</p>
+
+    <p> Prizes are TBA </p>
+    <p>Note that we must be able to contact you via email! If you do not enter a valid email or do respond within the given time, we will give the prize to the next qualifying team.</p>
+  </div>
+  <div class="divider"></div>
+
+  <div class="section">
+    <h5>IceCTF</h5>
+    <p>IceCTF is a computer security contest targeted at anyone with an interest in computer science. The game consists of a series of challenges where participants must reverse engineer, break, hack, decrypt, or do whatever it takes to solve the challenge. The challenges are all set up with the intent of being hacked, making it a great way to get some hands-on experience.</p>
+
+    <p>Challenge yourself and learn new concepts. You never really know how good you are at security and computer science until you really try it out. You might just win.</p>
+
+    <p>Don't know anything about computer science or cyber-security? Fear not. IceCTF is designed to accommodate both novice and advanced players alike. Many challenges will guide you to the right resources. As long as you're willing to learn and do a little research, most challenges should be within reach. Check out the <a href="/faq">FAQ</a> for some tips.</p>
+  </div>
+  <div class="divider"></div>
+
+  <div class="section rules" id="rules">
+    <h5>Rules</h5>
+    <p>We can't really stop you from not obeying the rules. However, infractions <b>will</b> result in disqualification depending on the severity.</p>
+    <ul>
+      <li>Do not share flags with other teams.</li>
+      <li>Be fair. Obey the team size limit of 4.</li>
+      <li>Duplicate teams composed of the same individuals are not allowed.</li>
+      <li>Try to solve problems rather than brute-forcing the submission system. The probability that you will succeed is very small. Seriously.</li>
+      <li>Do not DDoS or DoS. Sending continuous requests when a challenge calls for such methods is perfectly acceptable. If you know how to perform these attacks, put your skills to better use by solving the challenges. Don't ruin the fun for everyone.</li>
+      <li>Limit the use of automated tools, crawlers, or scanners that send continuous requests over a prolonged period of time. None of these are required to solve any of the challenges.</li>
+      <li>Have fun and learn.</li>
+    </ul>
+  </div>
+  <div class="divider"></div>
+</div>
+<br>
+{% endblock %}

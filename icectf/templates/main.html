@@ -1,0 +1,108 @@
+{% set navigation_bar = [
+(url_for("index"), 'Home'),
+(url_for("about"), 'About'),
+(url_for("faq"), 'FAQ'),
+(url_for("contact"), 'Contact'),
+(url_for("sponsors"), 'Sponsors'),
+(url_for("challenges"), 'Challenges')
+] -%}
+{% set active_page = active_page|default('Home') -%}
+<!DOCTYPE html>
+<!--[if lte IE 8]><html class="lt-ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html lang="en" class="ie9 no-js"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>{{ active_page }} - IceCTF</title>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    {% assets "css_comp" %}
+        <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}" />
+        {% endassets %}
+        {% assets "css_all" %}
+        <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+        {% endassets %}
+  </head>
+  <body>
+    <!--[if lte IE 7]>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="blue-grey">
+      <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav hide-on-large-only"><i class="medium mdi-navigation-menu white-text text-accent-2"></i></a></div>
+      <ul id="nav-mobile" class="side-nav fixed blue-grey lighten-5">
+        <li class="logo"><a id="logo-container" href="/" class="brand-logo">
+          <img id="front-page-logo" src="/static/images/logos/logo.png" alt="" /></a></li>
+        {% for href, title in navigation_bar %}
+          <li {% if title == active_page %} class="active" {% endif %}><a href="{{ href|e }}">{{ title|e }}</a>
+        {% endfor %}
+      </ul>
+    </header>
+    {% block layout %}
+    <main>
+
+      <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+          {% block header %}{% endblock %}
+        </div>
+      </div>
+
+      <br>
+      {% block content %}{% endblock %}
+    </main>
+    {% endblock %}
+
+    {% block modals %}{% endblock %}
+
+    <footer class="blue-grey darken-3 page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">IceCTF</h5>
+            <p class="grey-text text-lighten-4">A Capture the Flag competition.</p>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Pages</h5>
+            <ul>
+              <li><a class="white-text" href="contact.html">Contact</a>
+              </li>
+              <li><a class="white-text" href="faq.html">FAQ</a>
+              </li>
+              <li><a class="white-text" href="about.html">About</a>
+              </li>
+              <li><a class="white-text" href="sponsors.html">Sponsors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="https://github.com/jamiees2">Github</a>
+              </li>
+              <li><a class="white-text" href="https://www.facebook.com/groups/1418538045055499/">Facebook</a>
+              </li>
+              <li><a class="white-text">Email: icectf <span class="hide">ai90jsf90as</span>[at]<span class="hide">bllja9023j</span> icec.tf</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          &copy; IceCTF 2015 | Made with <a class="grey-text text-lighten-2" href="http://materializecss.com/">MaterializeCSS</a>
+          <a class="grey-text text-lighten-2 right" href="https://tldrlegal.com/license/mit-license">MIT License</a>
+        </div>
+      </div>
+    </footer>
+
+
+    {% assets "js_comp" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+    {% assets "js_all" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+    {% endassets %}
+  </body>
+</html>
+

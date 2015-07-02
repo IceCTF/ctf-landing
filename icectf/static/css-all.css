@@ -1,0 +1,208 @@
+@media only screen and (min-width: 993px) {
+  /* line 2 */
+  header, main, footer {
+    padding-left: 240px;
+  }
+}
+/* line 7 */
+#index-banner {
+  background-color: #79c0dd;
+  color: #111;
+}
+/* line 10 */
+#index-banner h5 {
+  color: #333;
+}
+/* line 13 */
+#index-banner img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* line 19 */
+.icon-block {
+  padding: 0 15px;
+}
+/* line 21 */
+.icon-block .icon {
+  color: #3489ff;
+}
+
+/* line 26 */
+.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=date]:focus + label, .input-field textarea:focus + label {
+  color: #536dfe;
+}
+
+/* line 30 */
+.input-field .prefix.active {
+  color: #536dfe;
+}
+
+/* line 34 */
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, textarea:focus {
+  border-bottom: 1px solid #536dfe;
+  -webkit-box-shadow: 0 1px 0 0 #536dfe;
+  -moz-box-shadow: 0 1px 0 0 #536dfe;
+  box-shadow: 0 1px 0 0 #536dfe;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  /* line 42 */
+  .modal {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 48 */
+  .modal {
+    width: 100%;
+  }
+}
+/* line 53 */
+ul.side-nav.fixed li.logo {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #81d4fa;
+}
+
+/* line 61 */
+ul.side-nav.fixed li.logo:hover {
+  background-color: transparent;
+}
+
+/* line 65 */
+#logo-container {
+  height: 100px;
+  margin-bottom: 32px;
+}
+
+/* line 70 */
+#front-page-logo {
+  display: inline-block;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 77 */
+  header, main, footer {
+    padding-left: 0;
+  }
+}
+/* line 82 */
+a, .card a, .card a:hover {
+  color: #536dfe;
+}
+
+/* line 86 */
+ul.side-nav.full li, ul.side-nav.fixed li {
+  transition: background-color 0.3s ease 0s;
+  line-height: 64px;
+}
+
+/* line 91 */
+ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
+  background-color: #90a4ae;
+}
+
+/* line 95 */
+ul.side-nav.full li.active, ul.side-nav.fixed li.active {
+  background-color: #37474f;
+}
+/* line 97 */
+ul.side-nav.full li.active a, ul.side-nav.fixed li.active a {
+  color: white;
+}
+
+/* line 102 */
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, textarea:focus.materialize-textarea {
+  border-bottom: 1px solid #536dfe;
+  -webkit-box-shadow: 0 1px 0 0 #536dfe;
+  -moz-box-shadow: 0 1px 0 0 #536dfe;
+  box-shadow: 0 1px 0 0 #536dfe;
+}
+
+/* line 109 */
+.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field textarea:focus.materialize-textarea + label {
+  color: #536dfe;
+}
+
+/* line 113 */
+.card .card-action {
+  border-top: 1px solid #B6B6B6;
+}
+
+/* line 117 */
+body {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+
+/* line 124 */
+header, footer {
+  flex-shrink: 0;
+}
+
+/* line 128 */
+main {
+  flex: 1 0 auto;
+}
+
+/* line 132 */
+.card a {
+  margin-right: 0;
+  text-transform: none;
+}
+
+/* line 137 */
+b {
+  color: #536dfe;
+}
+
+/* line 141 */
+#slide-out, #nav-mobile {
+  overflow-y: auto;
+}
+
+/* line 145 */
+#rules li:before, #thanks li:before, #prizes li:before {
+  content: "> ";
+  color: #536dfe;
+  font-weight: bold;
+}
+
+/* line 151 */
+#thanks li:after {
+  content: " <";
+  color: #536dfe;
+  font-weight: bold;
+}
+
+/* line 157 */
+#thanks {
+  font-size: 1.1em;
+}
+
+/* line 161 */
+.syndis .card-image {
+  padding: 40px 20px;
+}
+
+/* line 166 */
+ul.list-bullets {
+  list-style-type: circle;
+  margin-left: 2em;
+}
+/* line 168 */
+ul.list-bullets li {
+  list-style-type: circle;
+}
+
+/* line 174 */
+.countdown {
+  max-width: 1000px;
+  margin: 0 auto;
+}

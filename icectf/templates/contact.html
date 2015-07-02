@@ -1,0 +1,41 @@
+{% extends "main.html" %}
+{% set active_page = 'Contact' %}
+{% block header %}
+<h1 class="header center">Contact</h1>
+<div class="row center">
+  <h5 class="header col s12 light">Please feel free to contact us if you have any questions!</h5>
+</div>
+{% endblock %}
+{% block content %}
+<div class="container">
+  <div class="section">
+    <div class="row">
+      <form class="col s12" action="/contact">
+        <input type="hidden" name="" />
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="full_namecontact" name="name" type="text" class="validate">
+            <label for="full_namecontact" class="">Full Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" name="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea name="message" class="materialize-textarea validate"></textarea>
+            <label>Message</label>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light indigo accent-2" type="submit" name="action">Submit
+          <i class="mdi-content-send right"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+<br>
+{% endblock %}

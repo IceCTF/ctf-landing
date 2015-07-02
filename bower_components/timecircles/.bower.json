@@ -1,0 +1,48 @@
+{
+  "name": "timecircles",
+  "homepage": "http://git.wimbarelds.nl/TimeCircles/",
+  "authors": [
+    "Wim Barelds <wim.barelds@gmail.com>"
+  ],
+  "description": "TimeCircles is a jQuery plugin that provides a nice looking way to either count down towards a certain time, or to count up from a certain time. The goal for TimeCircles is to provide a simple yet dynamic tool that makes it very easy to provide visitors an attractive countdown or timer.",
+  "main": [
+    "inc/TimeCircles.js",
+    "inc/TimeCircles.css"
+  ],
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "timer",
+    "stopwatch",
+    "count",
+    "countdown",
+    "time",
+    "date",
+    "datetime",
+    "clock",
+    "comingsoon",
+    "ui",
+    "construction"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.9.1"
+  },
+  "_release": "54a8b23cdb",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "54a8b23cdbaf2eda278183e92ae81ae9aa0291e6"
+  },
+  "_source": "git://github.com/jamiees2/TimeCircles.git",
+  "_target": "master",
+  "_originalSource": "jamiees2/TimeCircles"
+}

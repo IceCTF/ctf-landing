@@ -1,0 +1,9 @@
+setup.py
+IceCTF_landing.egg-info/PKG-INFO
+IceCTF_landing.egg-info/SOURCES.txt
+IceCTF_landing.egg-info/dependency_links.txt
+IceCTF_landing.egg-info/pbr.json
+IceCTF_landing.egg-info/requires.txt
+IceCTF_landing.egg-info/top_level.txt
+icectf/__init__.py
+icectf/routes.py
