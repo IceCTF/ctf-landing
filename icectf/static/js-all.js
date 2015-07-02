@@ -13,14 +13,14 @@ $(document).ready(function() {
           form.find('i, label').removeClass('active');
           form.find('input').blur();
         }
-        Materialize.toast(data.message, data.message.length * 150);
+        Materialize.toast(data.message, data.message.length * 500);
         return setTimeout((function() {
           return $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', false);
         }), 500);
       },
       error: function(xhr, opts, err) {
         $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', false);
-        return Materialize.toast("An error occured, please try again later.", 150);
+        return Materialize.toast("An error occured, please try again later.", 1500);
       }
     });
     return false;
