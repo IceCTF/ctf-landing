@@ -1,4 +1,3 @@
-
 from icectf.routes import icectf, env
 
 from flask.ext.script import Manager
