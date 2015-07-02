@@ -5,7 +5,7 @@
 }
 
 #index-banner {
-  background-color: #79c0dd;
+  background-color: #3489ff;
   color: #111;
   h5 {
     color: #333;
@@ -55,7 +55,8 @@ ul.side-nav.fixed li.logo {
   padding-top: 20px;
   padding-bottom: 10px;
   // border-bottom: 1px solid #ddd;
-  background-color: #81d4fa;
+  background-color: #3489ff;
+  border-bottom: 3px solid #EEE;
 }
 
 ul.side-nav.fixed li.logo:hover {
@@ -71,6 +72,15 @@ ul.side-nav.fixed li.logo:hover {
   display: inline-block;
   height: 100%;
   pointer-events: none;
+  // filter: drop-shadow(12px 12px 7px rgba(42,121,226,1));
+  // -webkit-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.4));
+  // filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.4));
+  // filter: url(shadow.svg#drop-shadow);
+  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=7, OffY=7, Color='#000')";
+filter: url(#drop-shadow);
+-webkit-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
+filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
+
 };
 
 @media only screen and (max-width : 992px) {
@@ -89,11 +99,11 @@ ul.side-nav.full li, ul.side-nav.fixed li {
 }
 
 ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
-  background-color: #90a4ae;
+  background-color: #FFF;
 }
 
 ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #37474f;
+  background-color: #3489ff;
   a {
     color: white;
   }
@@ -174,4 +184,9 @@ ul.list-bullets {
 .countdown {
   max-width: 1000px;
   margin: 0 auto;
+}
+
+.page-footer
+{
+    background: #3489ff !IMPORTANT;
 }
