@@ -1,6 +1,0 @@
-Flask==0.10.1
-configparser==3.5.0b2
-uWSGI==2.0.9
-pyyaml==3.11
-flask-assets==0.10
-flask-script==2.0.5
