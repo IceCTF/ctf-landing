@@ -6,7 +6,7 @@
 }
 /* line 7 */
 #index-banner {
-  background-color: #00A8FF;
+  background-color: #82D4FF;
   color: #111;
 }
 /* line 10 */
@@ -63,7 +63,7 @@ ul.side-nav.fixed li.logo {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #00A8FF;
+  background-color: #3BBCFF;
 }
 
 /* line 61 */
@@ -209,7 +209,7 @@ ul.list-bullets li {
 
 /* line 188 */
 .page-footer {
-  background: #3489ff !IMPORTANT;
+  background: #82D4FF !IMPORTANT;
 }
 
 /* line 193 */
@@ -218,12 +218,12 @@ ul.list-bullets li {
 }
 
 /* line 198 */
-.header {
-  color: #FFF !IMPORTANT;
+.header, h1 {
+  color: #FFF;
 }
 
 /* line 203 */
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
   color: #3489FF !IMPORTANT;
 }
 

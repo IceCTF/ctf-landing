@@ -5,7 +5,7 @@
 }
 
 #index-banner {
-  background-color: #00A8FF;
+  background-color: #82D4FF;
   color: #111;
   h5 {
     color: #333;
@@ -55,7 +55,7 @@ ul.side-nav.fixed li.logo {
   padding-top: 20px;
   padding-bottom: 10px;
   // border-bottom: 1px solid #ddd;
-  background-color: #00A8FF;
+  background-color: #3BBCFF;
 }
 
 ul.side-nav.fixed li.logo:hover {
@@ -187,7 +187,7 @@ ul.list-bullets {
 
 .page-footer
 {
-    background: #3489ff !IMPORTANT;
+    background: #82D4FF !IMPORTANT;
 }
 
 .head-nav
@@ -195,12 +195,12 @@ ul.list-bullets {
     background: #3489FF !IMPORTANT;
 }
 
-.header
+.header, h1
 {
-    color: #FFF !IMPORTANT;
+    color: #FFF;
 }
 
-h1, h2, h3, h4, h5, h6
+h2, h3, h4, h5, h6
 {
     color: #3489FF !IMPORTANT;
 }
