@@ -21,9 +21,12 @@ $grayish: #b6b6b6;
         box-shadow: $top $left $blur $color;
     }
 }
-//original selectors
-//#rules li:before, #thanks li:before, #prizes li:before
-%extend_3 {
+
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
 }
 
 
@@ -119,8 +122,7 @@ $grayish: #b6b6b6;
 ul {
     &.side-nav {
         &.fixed li {
-            //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-            transition: background-color 0.3s ease 0s;
+            @include transition(background-color 0.3s ease 0s);
             line-height: 64px;
             &.logo {
                 text-align: center;
@@ -143,8 +145,7 @@ ul {
             }
         }
         &.full li {
-            //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
-            transition: background-color 0.3s ease 0s;
+            @include transition(background-color 0.3s ease 0s);
             line-height: 64px;
             &:hover {
                 background-color: $white;

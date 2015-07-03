@@ -1,167 +1,173 @@
 @media only screen and (min-width: 993px) {
-  /* line 31 */
+  /* line 34 */
   header {
     padding-left: 240px;
   }
 
-  /* line 34 */
+  /* line 37 */
   main {
     padding-left: 240px;
   }
 
-  /* line 37 */
+  /* line 40 */
   footer {
     padding-left: 240px;
   }
 }
-/* line 41 */
+/* line 44 */
 #index-banner {
   background-color: #82d4ff;
   color: #111;
 }
-/* line 44 */
+/* line 47 */
 #index-banner img {
   width: 100%;
   margin: 0 auto;
 }
-/* line 48 */
+/* line 51 */
 #index-banner h5 {
   color: #333;
 }
 
-/* line 52 */
+/* line 55 */
 .icon-block {
   padding: 0 15px;
 }
-/* line 54 */
+/* line 57 */
 .icon-block.icon {
   color: #3489ff;
 }
 
-/* line 60 */
-.input-field input[type=text]:focus + label {
-  color: #536dfe;
-}
 /* line 63 */
 .input-field input[type=text]:focus + label {
   color: #536dfe;
 }
-/* line 68 */
-.input-field input[type=password]:focus + label {
+/* line 66 */
+.input-field input[type=text]:focus + label {
   color: #536dfe;
 }
 /* line 71 */
 .input-field input[type=password]:focus + label {
   color: #536dfe;
 }
-/* line 76 */
-.input-field input[type=email]:focus + label {
+/* line 74 */
+.input-field input[type=password]:focus + label {
   color: #536dfe;
 }
 /* line 79 */
 .input-field input[type=email]:focus + label {
   color: #536dfe;
 }
-/* line 84 */
-.input-field input[type=date]:focus + label {
+/* line 82 */
+.input-field input[type=email]:focus + label {
   color: #536dfe;
 }
 /* line 87 */
 .input-field input[type=date]:focus + label {
   color: #536dfe;
 }
-/* line 92 */
-.input-field textarea:focus.materialize-textarea + label {
+/* line 90 */
+.input-field input[type=date]:focus + label {
   color: #536dfe;
 }
 /* line 95 */
+.input-field textarea:focus.materialize-textarea + label {
+  color: #536dfe;
+}
+/* line 98 */
 .input-field textarea:focus + label {
   color: #536dfe;
 }
-/* line 99 */
+/* line 102 */
 .input-field .prefix.active {
   color: #565656;
 }
-/* line 102 */
+/* line 105 */
 .input-field input[type=tel]:focus + label {
   color: #536dfe;
 }
-/* line 105 */
+/* line 108 */
 .input-field input[type=number]:focus + label {
   color: #536dfe;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  /* line 110 */
+  /* line 113 */
   .modal {
     width: 80%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 115 */
+  /* line 118 */
   .modal {
     width: 100%;
   }
 }
-/* line 121 */
+/* line 124 */
 ul.side-nav.fixed li {
+  -moz-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
   line-height: 64px;
 }
-/* line 125 */
+/* line 127 */
 ul.side-nav.fixed li.logo {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
   background-color: #3bbcff;
 }
-/* line 131 */
+/* line 133 */
 ul.side-nav.fixed li.logo:hover {
   background-color: transparent;
 }
-/* line 135 */
+/* line 137 */
 ul.side-nav.fixed li:hover {
   background-color: #fff;
 }
-/* line 138 */
+/* line 140 */
 ul.side-nav.fixed li.active {
   background-color: #565656;
 }
-/* line 140 */
+/* line 142 */
 ul.side-nav.fixed li.active a {
   color: #fff;
 }
-/* line 145 */
+/* line 147 */
 ul.side-nav.full li {
+  -moz-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
   transition: background-color 0.3s ease 0s;
   line-height: 64px;
 }
-/* line 149 */
+/* line 150 */
 ul.side-nav.full li:hover {
   background-color: #fff;
 }
-/* line 152 */
+/* line 153 */
 ul.side-nav.full li.active {
   background-color: #565656;
   color: #fff;
 }
-/* line 158 */
+/* line 159 */
 ul.list-bullets {
   list-style-type: circle;
   margin-left: 2em;
 }
-/* line 161 */
+/* line 162 */
 ul.list-bullets li {
   list-style-type: circle;
 }
 
-/* line 166 */
+/* line 167 */
 #logo-container {
   height: 100px;
   margin-bottom: 32px;
 }
 
-/* line 170 */
+/* line 171 */
 #front-page-logo {
   display: inline-block;
   height: 100%;
@@ -169,42 +175,42 @@ ul.list-bullets li {
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 176 */
+  /* line 177 */
   header {
     padding-left: 0;
   }
 
-  /* line 179 */
+  /* line 180 */
   main {
     padding-left: 0;
   }
 
-  /* line 182 */
+  /* line 183 */
   footer {
     padding-left: 0;
   }
 }
-/* line 186 */
+/* line 187 */
 a {
   color: #536dfe;
 }
 
-/* line 190 */
+/* line 191 */
 .card a {
   color: #536dfe;
   margin-right: 0;
   text-transform: none;
 }
-/* line 194 */
+/* line 195 */
 .card a:hover {
   color: #536dfe;
 }
-/* line 198 */
+/* line 199 */
 .card .card-action {
   border-top: 1px solid #b6b6b6;
 }
 
-/* line 202 */
+/* line 203 */
 body {
   display: flex;
   height: 100vh;
@@ -212,127 +218,127 @@ body {
   overflow-y: scroll;
 }
 
-/* line 208 */
+/* line 209 */
 header {
   flex-shrink: 0;
 }
 
-/* line 211 */
+/* line 212 */
 footer {
   flex-shrink: 0;
 }
 
-/* line 214 */
+/* line 215 */
 main {
   flex: 1 0 auto;
 }
 
-/* line 217 */
+/* line 218 */
 b {
   color: #536dfe;
 }
 
-/* line 220 */
+/* line 221 */
 #slide-out {
   overflow-y: auto;
 }
 
-/* line 223 */
+/* line 224 */
 #nav-mobile {
   overflow-y: auto;
 }
 
-/* line 228 */
+/* line 229 */
 ul.left-arrow li:before {
   content: "> ";
   color: #536dfe;
   font-weight: bold;
 }
 
-/* line 237 */
+/* line 238 */
 ul.right-arrow li:after {
   content: " <";
   color: #536dfe;
   font-weight: bold;
 }
 
-/* line 244 */
+/* line 245 */
 #thanks {
   font-size: 1.1em;
 }
 
-/* line 247 */
+/* line 248 */
 .countdown {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 251 */
+/* line 252 */
 .page-footer {
   background: #565656 !important;
 }
 
-/* line 254 */
+/* line 255 */
 .head-nav {
   background: #3489ff;
 }
 
-/* line 257 */
+/* line 258 */
 .header {
   color: #fff;
 }
 
-/* line 260 */
+/* line 261 */
 h1 {
   color: #fff;
 }
 
-/* line 263 */
+/* line 264 */
 h2 {
   color: #3489ff;
 }
 
-/* line 266 */
+/* line 267 */
 h3 {
   color: #3489ff;
 }
 
-/* line 269 */
+/* line 270 */
 h4 {
   color: #3489ff;
 }
 
-/* line 272 */
+/* line 273 */
 h5 {
   color: #3489ff;
 }
 
-/* line 275 */
+/* line 276 */
 h6 {
   color: #3489ff;
 }
 
-/* line 278 */
+/* line 279 */
 .collapsible-header {
   color: #3489ff;
 }
 
-/* line 281 */
+/* line 282 */
 button {
   background: #3489ff;
 }
 
-/* line 284 */
+/* line 285 */
 .blue-text {
   color: #3489ff;
 }
 
-/* line 287 */
+/* line 288 */
 .blue-back {
   background: #3489ff;
 }
 
-/* line 290 */
+/* line 291 */
 input[type=text]:focus {
   border-bottom: 1px solid #536dfe;
   -webkit-box-shadow: inset 0 1px 0 0;
@@ -340,7 +346,7 @@ input[type=text]:focus {
   box-shadow: inset 0 1px 0 0;
 }
 
-/* line 295 */
+/* line 296 */
 input[type=password]:focus {
   border-bottom: 1px solid #536dfe;
   -webkit-box-shadow: inset 0 1px 0 0;
@@ -348,7 +354,7 @@ input[type=password]:focus {
   box-shadow: inset 0 1px 0 0;
 }
 
-/* line 300 */
+/* line 301 */
 input[type=email]:focus {
   border-bottom: 1px solid #536dfe;
   -webkit-box-shadow: inset 0 1px 0 0;
@@ -356,7 +362,7 @@ input[type=email]:focus {
   box-shadow: inset 0 1px 0 0;
 }
 
-/* line 304 */
+/* line 305 */
 input[type=date]:focus {
   border-bottom: 1px solid #536dfe;
   -webkit-box-shadow: inset 0 1px 0 0;
@@ -364,35 +370,35 @@ input[type=date]:focus {
   box-shadow: inset 0 1px 0 0;
 }
 
-/* line 309 */
+/* line 310 */
 textarea:focus {
   border-bottom: 1px solid #536dfe;
   -webkit-box-shadow: inset 0 1px 0 0;
   -moz-box-shadow: inset 0 1px 0 0;
   box-shadow: inset 0 1px 0 0;
 }
-/* line 313 */
+/* line 314 */
 textarea:focus.materialize-textarea {
   -webkit-box-shadow: inset 0 1px 0 0;
   -moz-box-shadow: inset 0 1px 0 0;
   box-shadow: inset 0 1px 0 0;
 }
 
-/* line 317 */
+/* line 318 */
 input[type=tel]:focus {
   -webkit-box-shadow: inset 0 1px 0 0;
   -moz-box-shadow: inset 0 1px 0 0;
   box-shadow: inset 0 1px 0 0;
 }
 
-/* line 321 */
+/* line 322 */
 input[type=number]:focus {
   -webkit-box-shadow: inset 0 1px 0 0;
   -moz-box-shadow: inset 0 1px 0 0;
   box-shadow: inset 0 1px 0 0;
 }
 
-/* line 325 */
+/* line 326 */
 .syndis .card-image {
   padding: 40px 20px;
 }
