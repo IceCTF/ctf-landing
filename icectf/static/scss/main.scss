@@ -5,7 +5,7 @@
 }
 
 #index-banner {
-  background-color: #3489ff;
+  background-color: #00A8FF;
   color: #111;
   h5 {
     color: #333;
@@ -55,8 +55,7 @@ ul.side-nav.fixed li.logo {
   padding-top: 20px;
   padding-bottom: 10px;
   // border-bottom: 1px solid #ddd;
-  background-color: #3489ff;
-  border-bottom: 3px solid #EEE;
+  background-color: #00A8FF;
 }
 
 ul.side-nav.fixed li.logo:hover {
@@ -76,10 +75,10 @@ ul.side-nav.fixed li.logo:hover {
   // -webkit-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.4));
   // filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.4));
   // filter: url(shadow.svg#drop-shadow);
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=7, OffY=7, Color='#000')";
-filter: url(#drop-shadow);
--webkit-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
+  // filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=7, OffY=7, Color='#000')";
+  //   filter: url(#drop-shadow);
+  //   -webkit-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
+  //   filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
 
 };
 
@@ -103,7 +102,7 @@ ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
 }
 
 ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #3489ff;
+  background-color: #8097B6;
   a {
     color: white;
   }
@@ -189,4 +188,39 @@ ul.list-bullets {
 .page-footer
 {
     background: #3489ff !IMPORTANT;
+}
+
+.head-nav
+{
+    background: #3489FF !IMPORTANT;
+}
+
+.header
+{
+    color: #FFF !IMPORTANT;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    color: #3489FF !IMPORTANT;
+}
+
+.collapsible-header
+{
+    color: #3489FF !IMPORTANT;
+}
+
+button
+{
+    background: #3489FF !IMPORTANT;
+}
+
+.blue-text
+{
+    color: #3489FF !IMPORTANT;
+}
+
+.blue-back
+{
+    background: #3489FF !IMPORTANT;
 }

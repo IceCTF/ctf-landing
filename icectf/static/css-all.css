@@ -6,7 +6,7 @@
 }
 /* line 7 */
 #index-banner {
-  background-color: #3489ff;
+  background-color: #00A8FF;
   color: #111;
 }
 /* line 10 */
@@ -63,64 +63,59 @@ ul.side-nav.fixed li.logo {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #3489ff;
-  border-bottom: 3px solid #EEE;
+  background-color: #00A8FF;
 }
 
-/* line 62 */
+/* line 61 */
 ul.side-nav.fixed li.logo:hover {
   background-color: transparent;
 }
 
-/* line 66 */
+/* line 65 */
 #logo-container {
   height: 100px;
   margin-bottom: 32px;
 }
 
-/* line 71 */
+/* line 70 */
 #front-page-logo {
   display: inline-block;
   height: 100%;
   pointer-events: none;
-  filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=7, OffY=7, Color='#000')";
-  filter: url(#drop-shadow);
-  -webkit-filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
-  filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.5));
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 87 */
+  /* line 86 */
   header, main, footer {
     padding-left: 0;
   }
 }
-/* line 92 */
+/* line 91 */
 a, .card a, .card a:hover {
   color: #536dfe;
 }
 
-/* line 96 */
+/* line 95 */
 ul.side-nav.full li, ul.side-nav.fixed li {
   transition: background-color 0.3s ease 0s;
   line-height: 64px;
 }
 
-/* line 101 */
+/* line 100 */
 ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
   background-color: #FFF;
 }
 
-/* line 105 */
+/* line 104 */
 ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #3489ff;
+  background-color: #8097B6;
 }
-/* line 107 */
+/* line 106 */
 ul.side-nav.full li.active a, ul.side-nav.fixed li.active a {
   color: white;
 }
 
-/* line 112 */
+/* line 111 */
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, textarea:focus.materialize-textarea {
   border-bottom: 1px solid #536dfe;
   -webkit-box-shadow: 0 1px 0 0 #536dfe;
@@ -128,17 +123,17 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
   box-shadow: 0 1px 0 0 #536dfe;
 }
 
-/* line 119 */
+/* line 118 */
 .input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field textarea:focus.materialize-textarea + label {
   color: #536dfe;
 }
 
-/* line 123 */
+/* line 122 */
 .card .card-action {
   border-top: 1px solid #B6B6B6;
 }
 
-/* line 127 */
+/* line 126 */
 body {
   display: flex;
   height: 100vh;
@@ -146,73 +141,108 @@ body {
   overflow-y: scroll;
 }
 
-/* line 134 */
+/* line 133 */
 header, footer {
   flex-shrink: 0;
 }
 
-/* line 138 */
+/* line 137 */
 main {
   flex: 1 0 auto;
 }
 
-/* line 142 */
+/* line 141 */
 .card a {
   margin-right: 0;
   text-transform: none;
 }
 
-/* line 147 */
+/* line 146 */
 b {
   color: #536dfe;
 }
 
-/* line 151 */
+/* line 150 */
 #slide-out, #nav-mobile {
   overflow-y: auto;
 }
 
-/* line 155 */
+/* line 154 */
 #rules li:before, #thanks li:before, #prizes li:before {
   content: "> ";
   color: #536dfe;
   font-weight: bold;
 }
 
-/* line 161 */
+/* line 160 */
 #thanks li:after {
   content: " <";
   color: #536dfe;
   font-weight: bold;
 }
 
-/* line 167 */
+/* line 166 */
 #thanks {
   font-size: 1.1em;
 }
 
-/* line 171 */
+/* line 170 */
 .syndis .card-image {
   padding: 40px 20px;
 }
 
-/* line 176 */
+/* line 175 */
 ul.list-bullets {
   list-style-type: circle;
   margin-left: 2em;
 }
-/* line 178 */
+/* line 177 */
 ul.list-bullets li {
   list-style-type: circle;
 }
 
-/* line 184 */
+/* line 183 */
 .countdown {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 189 */
+/* line 188 */
 .page-footer {
   background: #3489ff !IMPORTANT;
+}
+
+/* line 193 */
+.head-nav {
+  background: #3489FF !IMPORTANT;
+}
+
+/* line 198 */
+.header {
+  color: #FFF !IMPORTANT;
+}
+
+/* line 203 */
+h1, h2, h3, h4, h5, h6 {
+  color: #3489FF !IMPORTANT;
+}
+
+/* line 208 */
+.collapsible-header {
+  color: #3489FF !IMPORTANT;
+}
+
+/* line 213 */
+button {
+  background: #3489FF !IMPORTANT;
+}
+
+/* line 218 */
+.blue-text {
+  color: #3489FF !IMPORTANT;
+}
+
+/* line 223 */
+.blue-back {
+  background: #3489FF !IMPORTANT;
 }

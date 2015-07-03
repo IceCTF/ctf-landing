@@ -13,24 +13,25 @@
       <form class="col s12" action="/contact">
         <input type="hidden" name="" />
         <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col s12 m6">
+              <i class="mdi-action-account-circle prefix"></i>
             <input id="full_namecontact" name="name" type="text" class="validate">
             <label for="full_namecontact" class="">Full Name</label>
           </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
+          <div class="input-field col s12 m6">
+              <i class="mdi-content-mail prefix"></i>
             <input id="email" name="email" type="email" class="validate">
             <label for="email">Email</label>
           </div>
         </div>
         <div class="row">
           <div class="input-field col s12">
+              <i class="mdi-content-create prefix"></i>
             <textarea name="message" class="materialize-textarea validate"></textarea>
             <label>Message</label>
           </div>
         </div>
-        <button class="btn waves-effect waves-light indigo accent-2" type="submit" name="action">Submit
+        <button class="btn waves-effect waves-light right" type="submit" name="action">Submit
           <i class="mdi-content-send right"></i>
         </button>
       </form>
