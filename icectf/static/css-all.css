@@ -35,7 +35,7 @@
 
 /* line 30 */
 .input-field .prefix.active {
-  color: #536dfe;
+  color: #565656;
 }
 
 /* line 34 */
@@ -108,7 +108,7 @@ ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
 
 /* line 104 */
 ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #8097B6;
+  background-color: #565656;
 }
 /* line 106 */
 ul.side-nav.full li.active a, ul.side-nav.fixed li.active a {
@@ -209,40 +209,40 @@ ul.list-bullets li {
 
 /* line 188 */
 .page-footer {
-  background: #82D4FF !IMPORTANT;
+  background: #565656 !important;
 }
 
-/* line 193 */
+/* line 195 */
 .head-nav {
-  background: #3489FF !IMPORTANT;
+  background: #3489FF;
 }
 
-/* line 198 */
+/* line 200 */
 .header, h1 {
   color: #FFF;
 }
 
-/* line 203 */
+/* line 205 */
 h2, h3, h4, h5, h6 {
-  color: #3489FF !IMPORTANT;
+  color: #3489FF;
 }
 
-/* line 208 */
+/* line 210 */
 .collapsible-header {
-  color: #3489FF !IMPORTANT;
+  color: #3489FF;
 }
 
-/* line 213 */
+/* line 215 */
 button {
-  background: #3489FF !IMPORTANT;
+  background: #3489FF;
 }
 
-/* line 218 */
+/* line 220 */
 .blue-text {
-  color: #3489FF !IMPORTANT;
+  color: #3489FF;
 }
 
-/* line 223 */
+/* line 225 */
 .blue-back {
-  background: #3489FF !IMPORTANT;
+  background: #3489FF;
 }

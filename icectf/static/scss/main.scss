@@ -102,7 +102,7 @@ ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
 }
 
 ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #8097B6;
+  background-color: #565656;
   a {
     color: white;
   }
@@ -187,12 +187,14 @@ ul.list-bullets {
 
 .page-footer
 {
-    background: #82D4FF !IMPORTANT;
+    // background: #82D4FF;
+    // background: darken(#82D4FF, 40%) !important;
+    background: #565656 !important;
 }
 
 .head-nav
 {
-    background: #3489FF !IMPORTANT;
+    background: #3489FF;
 }
 
 .header, h1
@@ -202,25 +204,25 @@ ul.list-bullets {
 
 h2, h3, h4, h5, h6
 {
-    color: #3489FF !IMPORTANT;
+    color: #3489FF;
 }
 
 .collapsible-header
 {
-    color: #3489FF !IMPORTANT;
+    color: #3489FF;
 }
 
 button
 {
-    background: #3489FF !IMPORTANT;
+    background: #3489FF;
 }
 
 .blue-text
 {
-    color: #3489FF !IMPORTANT;
+    color: #3489FF;
 }
 
 .blue-back
 {
-    background: #3489FF !IMPORTANT;
+    background: #3489FF;
 }
