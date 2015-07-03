@@ -57,11 +57,12 @@ target/
 .ropeproject/
 .idea
 
-icectf/static/components
-icectf/static/css-all.css
-icectf/static/js-all.js
+#icectf/static/components
+#icectf/static/css-all.css
+#icectf/static/js-all.js
 bower_components/
 .webassets*
 
 node_modules/
 npm-debug.log
+.tmp
