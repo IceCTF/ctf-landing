@@ -1,228 +1,327 @@
-@media only screen and (min-width : 993px) {
-  header, main, footer {
-    padding-left: 240px;
-  };
+//colors
+$light_blue: #82d4ff;
+$black: #111;
+$dark_grey: #333;
+$sky_blue: #3489ff;
+$royal_blue: #536dfe;
+$gray: #565656;
+$light_gray: #ddd;
+$sea_blue: #3bbcff;
+$white: #fff;
+$grayish: #b6b6b6;
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow:inset $top $left $blur $color;
+        -moz-box-shadow:inset $top $left $blur $color;
+        box-shadow:inset $top $left $blur $color;
+    } @else {
+        -webkit-box-shadow: $top $left $blur $color;
+        -moz-box-shadow: $top $left $blur $color;
+        box-shadow: $top $left $blur $color;
+    }
+}
+//original selectors
+//#rules li:before, #thanks li:before, #prizes li:before
+%extend_3 {
 }
 
+
+@media only screen and(min-width : 993px) {
+    header {
+        padding-left: 240px;
+    }
+    main {
+        padding-left: 240px;
+    }
+    footer {
+        padding-left: 240px;
+    }
+}
 #index-banner {
-  background-color: #82D4FF;
-  color: #111;
-  h5 {
-    color: #333;
-  }
-  img {
-    width: 100%;
-    margin: 0 auto;
-  }
+    background-color: $light_blue;
+    color: $black;
+    img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    h5 {
+        color: $dark_grey;
+    }
 }
-
 .icon-block {
-  padding: 0 15px;
-  .icon {
-    color: #3489ff;
-  }
+    padding: 0 15px;
+    &.icon {
+        color: $sky_blue;
+    }
 }
-
-.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=date]:focus + label, .input-field textarea:focus + label {
-  color: #536dfe;
+.input-field {
+    input[type=text] {
+        &:focus+label {
+            color: $royal_blue;
+        }
+        &:focus + label {
+            color: $royal_blue;
+        }
+    }
+    input[type=password] {
+        &:focus+label {
+            color: $royal_blue;
+        }
+        &:focus + label {
+            color: $royal_blue;
+        }
+    }
+    input[type=email] {
+        &:focus+label {
+            color: $royal_blue;
+        }
+        &:focus + label {
+            color: $royal_blue;
+        }
+    }
+    input[type=date] {
+        &:focus+label {
+            color: $royal_blue;
+        }
+        &:focus + label {
+            color: $royal_blue;
+        }
+    }
+    textarea:focus {
+        &.materialize-textarea+label {
+            color: $royal_blue;
+        }
+        + label {
+            color: $royal_blue;
+        }
+    }
+    .prefix.active {
+        color: $gray;
+    }
+    input[type=tel]:focus+label {
+        color: $royal_blue;
+    }
+    input[type=number]:focus+label {
+        color: $royal_blue;
+    }
 }
-
-.input-field .prefix.active {
-  color: #565656;
+@media only screen and(min-width : 601px) and(max-width : 992px) {
+    .modal {
+        width: 80%;
+    }
 }
-
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, textarea:focus {
-  border-bottom: 1px solid #536dfe;
-  -webkit-box-shadow: 0 1px 0 0 #536dfe;
-  -moz-box-shadow: 0 1px 0 0 #536dfe;
-  box-shadow: 0 1px 0 0 #536dfe;
+@media only screen and(max-width : 600px) {
+    .modal {
+        width: 100%;
+    }
 }
-
-@media only screen and (min-width : 601px) and (max-width : 992px) {
-  .modal {
-    width: 80%;
-  };
+ul {
+    &.side-nav {
+        &.fixed li {
+            //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: background-color 0.3s ease 0s;
+            line-height: 64px;
+            &.logo {
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                // border-bottom: 1px solid $light_gray;
+                background-color: $sea_blue;
+                &:hover {
+                    background-color: transparent;
+                }
+            }
+            &:hover {
+                background-color: $white;
+            }
+            &.active {
+                background-color: $gray;
+                a {
+                    color: $white;
+                }
+            }
+        }
+        &.full li {
+            //Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+            transition: background-color 0.3s ease 0s;
+            line-height: 64px;
+            &:hover {
+                background-color: $white;
+            }
+            &.active {
+                background-color: $gray;
+                color: $white;
+            }
+        }
+    }
+    &.list-bullets {
+        list-style-type: circle;
+        margin-left: 2em;
+        li {
+            list-style-type: circle;
+        }
+    }
 }
-
-@media only screen and (max-width : 600px) {
-  .modal {
-    width: 100%;
-  };
-}
-
-ul.side-nav.fixed li.logo {
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  // border-bottom: 1px solid #ddd;
-  background-color: #3BBCFF;
-}
-
-ul.side-nav.fixed li.logo:hover {
-  background-color: transparent;
-}
-
 #logo-container {
-  height: 100px;
-  margin-bottom: 32px;
+    height: 100px;
+    margin-bottom: 32px;
 }
-
 #front-page-logo {
-  display: inline-block;
-  height: 100%;
-  pointer-events: none;
-  // filter: drop-shadow(12px 12px 7px rgba(42,121,226,1));
-  // -webkit-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.4));
-  // filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.4));
-  // filter: url(shadow.svg#drop-shadow);
-  // filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=7, OffY=7, Color='#000')";
-  //   filter: url(#drop-shadow);
-  //   -webkit-filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
-  //   filter: drop-shadow(7px 7px 7px rgba(0,0,0,0.5));
-
-};
-
-@media only screen and (max-width : 992px) {
-  header, main, footer {
-    padding-left: 0;
-  };
+    display: inline-block;
+    height: 100%;
+    pointer-events: none;
 }
-
-a, .card a, .card a:hover {
-  color: #536dfe;
+@media only screen and(max-width : 992px) {
+    header {
+        padding-left: 0;
+    }
+    main {
+        padding-left: 0;
+    }
+    footer {
+        padding-left: 0;
+    }
 }
-
-ul.side-nav.full li, ul.side-nav.fixed li {
-  transition: background-color 0.3s ease 0s;
-  line-height: 64px;
+a {
+    color: $royal_blue;
 }
-
-ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
-  background-color: #FFF;
+.card {
+    a {
+        color: $royal_blue;
+        margin-right: 0;
+        text-transform: none;
+        &:hover {
+            color: $royal_blue;
+        }
+    }
+    .card-action {
+        border-top: 1px solid $grayish;
+    }
 }
-
-ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #565656;
-  a {
-    color: white;
-  }
-}
-
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, textarea:focus.materialize-textarea {
-  border-bottom: 1px solid #536dfe;
-  -webkit-box-shadow: 0 1px 0 0 #536dfe;
-  -moz-box-shadow: 0 1px 0 0 #536dfe;
-  box-shadow: 0 1px 0 0 #536dfe;
-}
-
-.input-field input[type=text]:focus+label, .input-field input[type=password]:focus+label, .input-field input[type=email]:focus+label, .input-field input[type=date]:focus+label, .input-field input[type=tel]:focus+label, .input-field input[type=number]:focus+label, .input-field textarea:focus.materialize-textarea+label {
-  color: #536dfe;
-}
-
-.card .card-action {
-  border-top: 1px solid #B6B6B6;
-}
-
 body {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  overflow-y: scroll;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    overflow-y: scroll;
 }
-
-header, footer {
-  flex-shrink: 0;
+header {
+    flex-shrink: 0;
 }
-
+footer {
+    flex-shrink: 0;
+}
 main {
-  flex: 1 0 auto;
+    flex: 1 0 auto;
 }
-
-.card a {
-  margin-right: 0;
-  text-transform: none;
-}
-
 b {
-  color: #536dfe;
+    color: $royal_blue;
 }
-
-#slide-out, #nav-mobile {
-  overflow-y: auto;
+#slide-out {
+    overflow-y: auto;
 }
-
-#rules li:before, #thanks li:before, #prizes li:before {
-  content: "> ";
-  color: #536dfe;
-  font-weight: bold;
+#nav-mobile {
+    overflow-y: auto;
 }
-
-#thanks li:after {
-  content: " <";
-  color: #536dfe;
-  font-weight: bold;
+ul.left-arrow {
+    li {
+        &:before {
+            content: "> ";
+            color: $royal_blue;
+            font-weight: bold;
+        }
+    }
 }
-
+ul.right-arrow {
+    li {
+        &:after {
+            content: " <";
+            color: $royal_blue;
+            font-weight: bold;
+        }
+    }
+}
 #thanks {
-  font-size: 1.1em;
+    font-size: 1.1em;
 }
-
-.syndis .card-image {
-  padding: 40px 20px;
-}
-
-
-ul.list-bullets {
-  list-style-type: circle;
-  li {
-    list-style-type: circle;
-  }
-  margin-left: 2em;
-}
-
 .countdown {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 }
-
-.page-footer
-{
-    // background: #82D4FF;
-    // background: darken(#82D4FF, 40%) !important;
-    background: #565656 !important;
+.page-footer {
+    background: $gray !important;
 }
-
-.head-nav
-{
-    background: #3489FF;
+.head-nav {
+    background: $sky_blue;
 }
-
-.header, h1
-{
-    color: #FFF;
+.header {
+    color: $white;
 }
-
-h2, h3, h4, h5, h6
-{
-    color: #3489FF;
+h1 {
+    color: $white;
 }
-
-.collapsible-header
-{
-    color: #3489FF;
+h2 {
+    color: $sky_blue;
 }
-
-button
-{
-    background: #3489FF;
+h3 {
+    color: $sky_blue;
 }
-
-.blue-text
-{
-    color: #3489FF;
+h4 {
+    color: $sky_blue;
 }
-
-.blue-back
-{
-    background: #3489FF;
+h5 {
+    color: $sky_blue;
+}
+h6 {
+    color: $sky_blue;
+}
+.collapsible-header {
+    color: $sky_blue;
+}
+button {
+    background: $sky_blue;
+}
+.blue-text {
+    color: $sky_blue;
+}
+.blue-back {
+    background: $sky_blue;
+}
+input[type=text]:focus {
+    
+    border-bottom: 1px solid $royal_blue;
+    @include box-shadow(0, 1px, 0, 0, $royal_blue);
+}
+input[type=password]:focus {
+    
+    border-bottom: 1px solid $royal_blue;
+    @include box-shadow(0, 1px, 0, 0, $royal_blue);
+}
+input[type=email]:focus {
+    border-bottom: 1px solid $royal_blue;
+    @include box-shadow(0, 1px, 0, 0, $royal_blue);
+}
+input[type=date]:focus {
+    
+    border-bottom: 1px solid $royal_blue;
+    @include box-shadow(0, 1px, 0, 0, $royal_blue);
+}
+textarea:focus {
+    
+    border-bottom: 1px solid $royal_blue;
+    @include box-shadow(0, 1px, 0, 0, $royal_blue);
+    &.materialize-textarea {
+        @include box-shadow(0, 1px, 0, 0, $royal_blue);
+    }
+}
+input[type=tel]:focus {
+    
+    @include box-shadow(0, 1px, 0, 0, $royal_blue);
+}
+input[type=number]:focus {
+    
+    @include box-shadow(0, 1px, 0, 0, $royal_blue);
+}
+.syndis .card-image {
+    padding: 40px 20px;
 }
