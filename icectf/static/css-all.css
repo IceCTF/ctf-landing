@@ -1,83 +1,173 @@
 @media only screen and (min-width: 993px) {
-  /* line 2 */
-  header, main, footer {
+  /* line 34 */
+  header {
+    padding-left: 240px;
+  }
+
+  /* line 37 */
+  main {
+    padding-left: 240px;
+  }
+
+  /* line 40 */
+  footer {
     padding-left: 240px;
   }
 }
-/* line 7 */
+/* line 44 */
 #index-banner {
-  background-color: #82D4FF;
+  background-color: #82d4ff;
   color: #111;
 }
-/* line 10 */
-#index-banner h5 {
-  color: #333;
-}
-/* line 13 */
+/* line 47 */
 #index-banner img {
   width: 100%;
   margin: 0 auto;
 }
+/* line 51 */
+#index-banner h5 {
+  color: #333;
+}
 
-/* line 19 */
+/* line 55 */
 .icon-block {
   padding: 0 15px;
 }
-/* line 21 */
-.icon-block .icon {
+/* line 57 */
+.icon-block.icon {
   color: #3489ff;
 }
 
-/* line 26 */
-.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=date]:focus + label, .input-field textarea:focus + label {
+/* line 63 */
+.input-field input[type=text]:focus + label {
   color: #536dfe;
 }
-
-/* line 30 */
+/* line 66 */
+.input-field input[type=text]:focus + label {
+  color: #536dfe;
+}
+/* line 71 */
+.input-field input[type=password]:focus + label {
+  color: #536dfe;
+}
+/* line 74 */
+.input-field input[type=password]:focus + label {
+  color: #536dfe;
+}
+/* line 79 */
+.input-field input[type=email]:focus + label {
+  color: #536dfe;
+}
+/* line 82 */
+.input-field input[type=email]:focus + label {
+  color: #536dfe;
+}
+/* line 87 */
+.input-field input[type=date]:focus + label {
+  color: #536dfe;
+}
+/* line 90 */
+.input-field input[type=date]:focus + label {
+  color: #536dfe;
+}
+/* line 95 */
+.input-field textarea:focus.materialize-textarea + label {
+  color: #536dfe;
+}
+/* line 98 */
+.input-field textarea:focus + label {
+  color: #536dfe;
+}
+/* line 102 */
 .input-field .prefix.active {
   color: #565656;
 }
-
-/* line 34 */
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, textarea:focus {
-  border-bottom: 1px solid #536dfe;
-  -webkit-box-shadow: 0 1px 0 0 #536dfe;
-  -moz-box-shadow: 0 1px 0 0 #536dfe;
-  box-shadow: 0 1px 0 0 #536dfe;
+/* line 105 */
+.input-field input[type=tel]:focus + label {
+  color: #536dfe;
+}
+/* line 108 */
+.input-field input[type=number]:focus + label {
+  color: #536dfe;
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-  /* line 42 */
+  /* line 113 */
   .modal {
     width: 80%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 48 */
+  /* line 118 */
   .modal {
     width: 100%;
   }
 }
-/* line 53 */
+/* line 124 */
+ul.side-nav.fixed li {
+  -moz-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+  line-height: 64px;
+}
+/* line 127 */
 ul.side-nav.fixed li.logo {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
-  background-color: #3BBCFF;
+  background-color: #3bbcff;
 }
-
-/* line 61 */
+/* line 133 */
 ul.side-nav.fixed li.logo:hover {
   background-color: transparent;
 }
+/* line 137 */
+ul.side-nav.fixed li:hover {
+  background-color: #fff;
+}
+/* line 140 */
+ul.side-nav.fixed li.active {
+  background-color: #565656;
+}
+/* line 142 */
+ul.side-nav.fixed li.active a {
+  color: #fff;
+}
+/* line 147 */
+ul.side-nav.full li {
+  -moz-transition: background-color 0.3s ease 0s;
+  -o-transition: background-color 0.3s ease 0s;
+  -webkit-transition: background-color 0.3s ease 0s;
+  transition: background-color 0.3s ease 0s;
+  line-height: 64px;
+}
+/* line 150 */
+ul.side-nav.full li:hover {
+  background-color: #fff;
+}
+/* line 153 */
+ul.side-nav.full li.active {
+  background-color: #565656;
+  color: #fff;
+}
+/* line 159 */
+ul.list-bullets {
+  list-style-type: circle;
+  margin-left: 2em;
+}
+/* line 162 */
+ul.list-bullets li {
+  list-style-type: circle;
+}
 
-/* line 65 */
+/* line 167 */
 #logo-container {
   height: 100px;
   margin-bottom: 32px;
 }
 
-/* line 70 */
+/* line 171 */
 #front-page-logo {
   display: inline-block;
   height: 100%;
@@ -85,55 +175,42 @@ ul.side-nav.fixed li.logo:hover {
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 86 */
-  header, main, footer {
+  /* line 177 */
+  header {
+    padding-left: 0;
+  }
+
+  /* line 180 */
+  main {
+    padding-left: 0;
+  }
+
+  /* line 183 */
+  footer {
     padding-left: 0;
   }
 }
-/* line 91 */
-a, .card a, .card a:hover {
+/* line 187 */
+a {
   color: #536dfe;
 }
 
-/* line 95 */
-ul.side-nav.full li, ul.side-nav.fixed li {
-  transition: background-color 0.3s ease 0s;
-  line-height: 64px;
+/* line 191 */
+.card a {
+  color: #536dfe;
+  margin-right: 0;
+  text-transform: none;
 }
-
-/* line 100 */
-ul.side-nav.full li:hover, ul.side-nav.fixed li:hover {
-  background-color: #FFF;
-}
-
-/* line 104 */
-ul.side-nav.full li.active, ul.side-nav.fixed li.active {
-  background-color: #565656;
-}
-/* line 106 */
-ul.side-nav.full li.active a, ul.side-nav.fixed li.active a {
-  color: white;
-}
-
-/* line 111 */
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=date]:focus, input[type=tel]:focus, input[type=number]:focus, textarea:focus.materialize-textarea {
-  border-bottom: 1px solid #536dfe;
-  -webkit-box-shadow: 0 1px 0 0 #536dfe;
-  -moz-box-shadow: 0 1px 0 0 #536dfe;
-  box-shadow: 0 1px 0 0 #536dfe;
-}
-
-/* line 118 */
-.input-field input[type=text]:focus + label, .input-field input[type=password]:focus + label, .input-field input[type=email]:focus + label, .input-field input[type=date]:focus + label, .input-field input[type=tel]:focus + label, .input-field input[type=number]:focus + label, .input-field textarea:focus.materialize-textarea + label {
+/* line 195 */
+.card a:hover {
   color: #536dfe;
 }
-
-/* line 122 */
+/* line 199 */
 .card .card-action {
-  border-top: 1px solid #B6B6B6;
+  border-top: 1px solid #b6b6b6;
 }
 
-/* line 126 */
+/* line 203 */
 body {
   display: flex;
   height: 100vh;
@@ -141,108 +218,182 @@ body {
   overflow-y: scroll;
 }
 
-/* line 133 */
-header, footer {
+/* line 209 */
+header {
   flex-shrink: 0;
 }
 
-/* line 137 */
+/* line 212 */
+footer {
+  flex-shrink: 0;
+}
+
+/* line 215 */
 main {
   flex: 1 0 auto;
 }
 
-/* line 141 */
-.card a {
-  margin-right: 0;
-  text-transform: none;
-}
-
-/* line 146 */
+/* line 218 */
 b {
   color: #536dfe;
 }
 
-/* line 150 */
-#slide-out, #nav-mobile {
+/* line 221 */
+#slide-out {
   overflow-y: auto;
 }
 
-/* line 154 */
-#rules li:before, #thanks li:before, #prizes li:before {
+/* line 224 */
+#nav-mobile {
+  overflow-y: auto;
+}
+
+/* line 229 */
+ul.left-arrow li:before {
   content: "> ";
   color: #536dfe;
   font-weight: bold;
 }
 
-/* line 160 */
-#thanks li:after {
+/* line 238 */
+ul.right-arrow li:after {
   content: " <";
   color: #536dfe;
   font-weight: bold;
 }
 
-/* line 166 */
+/* line 245 */
 #thanks {
   font-size: 1.1em;
 }
 
-/* line 170 */
-.syndis .card-image {
-  padding: 40px 20px;
-}
-
-/* line 175 */
-ul.list-bullets {
-  list-style-type: circle;
-  margin-left: 2em;
-}
-/* line 177 */
-ul.list-bullets li {
-  list-style-type: circle;
-}
-
-/* line 183 */
+/* line 248 */
 .countdown {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 188 */
+/* line 252 */
 .page-footer {
   background: #565656 !important;
 }
 
-/* line 195 */
+/* line 255 */
 .head-nav {
-  background: #3489FF;
+  background: #3489ff;
 }
 
-/* line 200 */
-.header, h1 {
-  color: #FFF;
+/* line 258 */
+h1 {
+  color: #fff;
 }
 
-/* line 205 */
-h2, h3, h4, h5, h6 {
-  color: #3489FF;
+/* line 261 */
+h2 {
+  color: #3489ff;
 }
 
-/* line 210 */
+/* line 264 */
+h3 {
+  color: #3489ff;
+}
+
+/* line 267 */
+h4 {
+  color: #3489ff;
+}
+
+/* line 270 */
+h5 {
+  color: #3489ff;
+}
+
+/* line 273 */
+h6 {
+  color: #3489ff;
+}
+
+/* line 276 */
 .collapsible-header {
-  color: #3489FF;
+  color: #3489ff;
 }
 
-/* line 215 */
+/* line 279 */
 button {
-  background: #3489FF;
+  background: #3489ff;
 }
 
-/* line 220 */
+/* line 282 */
 .blue-text {
-  color: #3489FF;
+  color: #3489ff;
 }
 
-/* line 225 */
+/* line 285 */
 .blue-back {
-  background: #3489FF;
+  background: #3489ff;
+}
+
+/* line 288 */
+input[type=text]:focus {
+  border-bottom: 1px solid #536dfe;
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+
+/* line 293 */
+input[type=password]:focus {
+  border-bottom: 1px solid #536dfe;
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+
+/* line 298 */
+input[type=email]:focus {
+  border-bottom: 1px solid #536dfe;
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+
+/* line 302 */
+input[type=date]:focus {
+  border-bottom: 1px solid #536dfe;
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+
+/* line 307 */
+textarea:focus {
+  border-bottom: 1px solid #536dfe;
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+/* line 311 */
+textarea:focus.materialize-textarea {
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+
+/* line 315 */
+input[type=tel]:focus {
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+
+/* line 319 */
+input[type=number]:focus {
+  -webkit-box-shadow: inset 0 1px 0 0;
+  -moz-box-shadow: inset 0 1px 0 0;
+  box-shadow: inset 0 1px 0 0;
+}
+
+/* line 323 */
+.syndis .card-image {
+  padding: 40px 20px;
 }

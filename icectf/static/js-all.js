@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  return $('form').submit(function() {
+  return $('form.contact').submit(function() {
     var form;
     form = $(this);
     $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', true);

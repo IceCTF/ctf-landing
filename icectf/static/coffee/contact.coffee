@@ -1,5 +1,5 @@
 $(document).ready ->
-  $('form').submit ->
+  $('form.contact').submit ->
     form = $(this)
     $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr 'disabled', true
     $.ajax
