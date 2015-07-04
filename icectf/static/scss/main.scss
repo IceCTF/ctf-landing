@@ -9,6 +9,8 @@ $light_gray: #ddd;
 $sea_blue: #3bbcff;
 $white: #fff;
 $grayish: #b6b6b6;
+$off_white: #E3E3E3;
+$offer_white: #D4D4D4;
 
 @mixin box-shadow($top, $left, $blur, $color, $inset: false) {
     @if $inset {
@@ -42,7 +44,7 @@ $grayish: #b6b6b6;
     }
 }
 #index-banner {
-    background-color: $light_blue;
+    background-color: $off_white;
     color: $black;
     img {
         width: 100%;
@@ -286,12 +288,12 @@ button {
     background: $sky_blue;
 }
 input[type=text]:focus {
-    
+
     border-bottom: 1px solid $royal_blue;
     @include box-shadow(0, 1px, 0, 0, $royal_blue);
 }
 input[type=password]:focus {
-    
+
     border-bottom: 1px solid $royal_blue;
     @include box-shadow(0, 1px, 0, 0, $royal_blue);
 }
@@ -300,12 +302,12 @@ input[type=email]:focus {
     @include box-shadow(0, 1px, 0, 0, $royal_blue);
 }
 input[type=date]:focus {
-    
+
     border-bottom: 1px solid $royal_blue;
     @include box-shadow(0, 1px, 0, 0, $royal_blue);
 }
 textarea:focus {
-    
+
     border-bottom: 1px solid $royal_blue;
     @include box-shadow(0, 1px, 0, 0, $royal_blue);
     &.materialize-textarea {
@@ -313,11 +315,11 @@ textarea:focus {
     }
 }
 input[type=tel]:focus {
-    
+
     @include box-shadow(0, 1px, 0, 0, $royal_blue);
 }
 input[type=number]:focus {
-    
+
     @include box-shadow(0, 1px, 0, 0, $royal_blue);
 }
 .syndis .card-image {
