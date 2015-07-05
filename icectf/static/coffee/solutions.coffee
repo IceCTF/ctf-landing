@@ -16,10 +16,10 @@ $(document).ready ->
     $('#solutions').openModal()
     false
   $('#recon').click ->
-    $('#s_content').html '<p>If you perform a Google search for <b>Linux inventor</b>, Entering Linus Torvalds isn&apos;t enough though, the system refuses to believe its him without his email! Searching for <b>Linus Torvalds email</b> gives us the email torvalds@osdl.org, which when submitted into the contact page will give you the flag.</p><p><b>Flag: {i_<3_LiNuX}</b></p>'
+    $('#s_content').html $(this).next("div.solution").html()
     $('#solutions').openModal()
     false
   $('#misc').click ->
-    $('#s_content').html '<p>Using Wireshark, open the file. You&apos;ll notice a TCP transfer occurring. TCP is a common network protocol used to transfer entities. To extract <b>flag.png</b>, use <b>File -> Export Objects -> HTTP</b>. Open the file to get the flag.</p><p><b>Flag: {p9troA}</b></p>'
+    $('#s_content').html $(this).next("div.solution").html()
     $('#solutions').openModal()
     false

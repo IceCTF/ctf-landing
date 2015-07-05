@@ -48,7 +48,7 @@
                 return false;
               }
             }
-            toast('Flag: ' + input, 5000);
+            Materialize.toast('Flag: ' + input, 5000);
             return true;
           }
         </script>
@@ -57,16 +57,27 @@
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon"><a id="recon" href="#solutions"><i class="mdi-action-explore"></i></a></h3>
+        <h3 class="center icon">
+          <a id="recon" href="#solutions"><i class="mdi-action-explore"></i></a>
+          <div class="hide solution">
+            <p>If you perform a Google search for <b>Linux inventor</b>, it will turn up the name "Linus Torvalds" Entering Linus Torvalds isn&apos;t enough though, the system refuses to believe its him without his email! Searching for <b>Linus Torvalds email</b> gives us the email torvalds@osdl.org, which when submitted into the contact page will give you the flag.</p><p><b>Flag: {i_<3_LiNuX}</b></p>
+          </div>
+        </h3>
         <h5 class="center">Reconnaissance</h5>
         <p class="light">Our Linux system loves its inventor! If you <a href="/contact"><b>contact</b></a> IceCTF and pretend to be its inventor, I'm sure the system would love to give you the flag. Also, you don't need a message, but you can send 'GIVE ME FLAG :D' if you want.</p>
       </div>
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon"><a id="misc" href="#solutions"><i class="mdi-social-share"></i></a></h3>
+        <h3 class="center icon">
+          <a id="misc" href="#solutions"><i class="mdi-social-share"></i></a>
+          <div class="hide solution">
+            <p> We know that the password is somehow related to that image... but what is it? Running a reverse image search on Google tells us that the picture is the album cover to Pink Floyd's famous album <a href="https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"><b>The Dark Side of the Moon</b></a>. We guess that that is the password, and you're right!</p>
+            <p> Flag: dark_side_of_the_moon</p>
+          </div>
+        </h3>
         <h5 class="center">Miscellaneous</h5>
-        <p class="light">I caught someone trying to steal something from the server! Take this <a href="challenges/capture.pcapng" download><b>capture.pcacpng</b></a> and see if you can make sense of it. You'll need Wireshark to find out what was unjustly taken from me. My precious file.</p>
+        <p class="light">I lost my password! Can you help me find it? All my passwords are famous album names (I have a bad memory). I also know it had something to do with this picture... <a href="challenges/password.png">password.png</a></p>
       </div>
     </div>
   </div>
