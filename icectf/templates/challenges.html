@@ -31,7 +31,7 @@
           <a id="expl" href="#solutions"><i class="mdi-hardware-security"></i></a>
           <div class="hide solution">
             <p>A basic web exploitation technique is to look at the <b>source code</b>. Viewing the source code of the page shows the hidden flag.</p>
-            <p><b>Flag: {web_exploits_are_fun}</b></p>
+            <p><b>Flag: web_exploits_are_fun</b></p>
             <p><small>Source: picoCTF 2014</small></p>
           </div>
         </h3>
@@ -47,7 +47,7 @@
           <a id="fore" href="#solutions"><i class="mdi-action-search"></i></a>
           <div class="hide solution">
             <p>Most file types have a <b>header</b> and a <b>trailer</b>. Image displaying software will only read to the trailer. Thus, it is possible to conceal information in the binary content of the file after the trailer. Open up the image in a hex editor such as <b>HxD</b> and look at the end to find the flag.</p>
-            <p><b>Flag: {lookin_at_you}</b></p>
+            <p><b>Flag: lookin_at_you</b></p>
             <p><small>Source: CamsCTF 2015</small></p>
           </div>
         </h3>
@@ -61,7 +61,7 @@
           <a id="prog" href="#solutions"><i class="mdi-editor-mode-edit"></i></a>
           <div class="hide solution">
           <p>After calling the function, view its source. Notice that the flag is represented as an integer array. The function iterates through each character of the input and compares its <b>JS Char Code</b> to the respective integer in the array. A one-liner solution is shown below.</p><p><pre>console.log(String.fromCharCode.apply(null, flag));</pre></p>
-          <p><b>Flag: {char_c0des_eh?}</b></p>
+          <p><b>Flag: char_c0des_eh?</b></p>
           <p><small>Source: CamsCTF 2015</small></p>
           </div>
         </h3>
@@ -90,7 +90,7 @@
           <a id="recon" href="#solutions"><i class="mdi-action-explore"></i></a>
           <div class="hide solution">
             <p>If you perform a Google search for <b>Linux inventor</b>, it will turn up the name "Linus Torvalds" Entering Linus Torvalds isn&apos;t enough though, the system refuses to believe its him without his email! Searching for <b>Linus Torvalds email</b> gives us the email torvalds@osdl.org, which when submitted into the contact page will give you the flag.</p>
-            <p><b>Flag: {i_<3_LiNuX}</b></p>
+            <p><b>Flag: i_&lt;3_LiNuX</b></p>
             <p><small>Source: CamsCTF 2015</small></p>
           </div>
         </h3>
