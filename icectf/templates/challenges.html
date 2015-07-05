@@ -12,30 +12,57 @@
   <div class="row">
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon"><a id="crypt" href="#solutions"><i class="mdi-communication-vpn-key"></i></a></h3>
+        <h3 class="center icon">
+          <a id="crypt" href="#solutions"><i class="mdi-communication-vpn-key"></i></a>
+          <div class="hide solution">
+            <p>This is a very simple cipher, the text has only been reversed! Infact, here is the text in its entirety.</p>
+            <p>This text is backwards! Now my secrets are perfectly secure. I can even put the flag here: secure_crypto. I bet you won't be able to see it!</p>
+            <p><b>Flag: secure_crypto</b></p>
+            <p><small>Source: picoCTF 2014</small></p>
+          </div>
+        </h3>
         <h5 class="center">Cryptography</h5>
-        <p class="light">Gur nycunorg unf 26 yrggref. 26 qvivqrq ol 2 vf rdhny gb 13. EBG13 vf n fvzcyr flzzrgevp pvcure. Rapbqvat naq qrpbqvat ner qbar va gur fnzr jnl. Fcrnxvat bs juvpu, gur synt vf <b>{ebg_va_13}</b>.</p>
+        <p class="light">!ti ees ot elba eb t'now uoy teb I .otpyrc_eruces :ereh galf eht tup neve nac I .eruces yltcefrep era sterces ym woN !sdrawkcab si txet sihT</p>
       </div>
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon"><a id="expl" href="#solutions"><i class="mdi-hardware-security"></i></a></h3>
+        <h3 class="center icon">
+          <a id="expl" href="#solutions"><i class="mdi-hardware-security"></i></a>
+          <p>A basic web exploitation technique is to look at the <b>source code</b>. Viewing the source code of the page shows the hidden flag.</p>
+          <p><b>Flag: {web_exploits_are_fun}</b></p>
+          <p><small>Source: picoCTF 2014</small></p>
+        </h3>
         <h5 class="center">Exploitation</h5>
-        <p class="light">I believe the super secret flag is right <b>here<!-- {sup3r_s3cr3t_f1ag} --></b>. What? You don't see it? Well I'm pretty sure I left it back there though. Have you tried looking more closely at the word "here"? It's probably easier if you're on a computer.</p>
+        <p class="light">There is something definitely off about <a href="/static/challenges/exploitation.html" target="new"><b>this page</b></a>. I can't figure out what it is though, but I can feel it! Can you take a look?</p>
       </div>
     </div>
   </div>
   <div class="row">
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon"><a id="fore" href="#solutions"><i class="mdi-action-search"></i></a></h3>
+        <h3 class="center icon">
+          <a id="fore" href="#solutions"><i class="mdi-action-search"></i></a>
+          <div class="hide solution">
+            <p>Most file types have a <b>header</b> and a <b>trailer</b>. Image displaying software will only read to the trailer. Thus, it is possible to conceal information in the binary content of the file after the trailer. Open up the image in a hex editor such as <b>HxD</b> and look at the end to find the flag.</p>
+            <p><b>Flag: {lookin_at_you}</b></p>
+            <p><small>Source: CamsCTF 2015</small></p>
+          </div>
+        </h3>
         <h5 class="center">Forensics</h5>
-        <p class="light">I was told that <b><a href="challenges/search.png" download>search.png</a></b> had something hidden inside of it. What's inside of the image? I've looked at every pixel and I'm pretty sure that nothing is inside of the image. That's 262144 pixels!!!</p>
+        <p class="light">I was told that <b><a href="/static/challenges/search.png" download>search.png</a></b> had something hidden inside of it. What's inside of the image? I've looked at every pixel and I'm pretty sure that nothing is inside of the image. That's 61004 pixels!!!</p>
       </div>
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon"><a id="prog" href="#solutions"><i class="mdi-editor-mode-edit"></i></a></h3>
+        <h3 class="center icon">
+          <a id="prog" href="#solutions"><i class="mdi-editor-mode-edit"></i></a>
+          <div class="hide solution">
+          <p>After calling the function, view its source. Notice that the flag is represented as an integer array. The function iterates through each character of the input and compares its <b>JS Char Code</b> to the respective integer in the array. A one-liner solution is shown below.</p><p><pre>console.log(String.fromCharCode.apply(null, flag));</pre></p>
+          <p><b>Flag: {char_c0des_eh?}</b></p>
+          <p><small>Source: CamsCTF 2015</small></p>
+          </div>
+        </h3>
         <h5 class="center">Programming</h5>
         <p class="light">The JavaScript function <b>is_correct(input)</b> will check whether the string input is the flag. It may be helpful to call the function in your browser's console. When you pass it the flag, it will tell you the flag. What a useful function.</p>
 
@@ -60,7 +87,9 @@
         <h3 class="center icon">
           <a id="recon" href="#solutions"><i class="mdi-action-explore"></i></a>
           <div class="hide solution">
-            <p>If you perform a Google search for <b>Linux inventor</b>, it will turn up the name "Linus Torvalds" Entering Linus Torvalds isn&apos;t enough though, the system refuses to believe its him without his email! Searching for <b>Linus Torvalds email</b> gives us the email torvalds@osdl.org, which when submitted into the contact page will give you the flag.</p><p><b>Flag: {i_<3_LiNuX}</b></p>
+            <p>If you perform a Google search for <b>Linux inventor</b>, it will turn up the name "Linus Torvalds" Entering Linus Torvalds isn&apos;t enough though, the system refuses to believe its him without his email! Searching for <b>Linus Torvalds email</b> gives us the email torvalds@osdl.org, which when submitted into the contact page will give you the flag.</p>
+            <p><b>Flag: {i_<3_LiNuX}</b></p>
+            <p><small>Source: CamsCTF 2015</small></p>
           </div>
         </h3>
         <h5 class="center">Reconnaissance</h5>
@@ -73,11 +102,12 @@
           <a id="misc" href="#solutions"><i class="mdi-social-share"></i></a>
           <div class="hide solution">
             <p> We know that the password is somehow related to that image... but what is it? Running a reverse image search on Google tells us that the picture is the album cover to Pink Floyd's famous album <a href="https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"><b>The Dark Side of the Moon</b></a>. We guess that that is the password, and you're right!</p>
-            <p> Flag: dark_side_of_the_moon</p>
+            <p><b>Flag: dark_side_of_the_moon</b></p>
+            <p><small>Source: picoCTF 2014</small></p>
           </div>
         </h3>
         <h5 class="center">Miscellaneous</h5>
-        <p class="light">I lost my password! Can you help me find it? All my passwords are famous album names (I have a bad memory). I also know it had something to do with this picture... <a href="challenges/password.png">password.png</a></p>
+        <p class="light">I lost my password! Can you help me find it? All my passwords are famous album names (I have a bad memory). I also know it had something to do with this picture... <a href="/static/challenges/password.png">password.png</a></p>
       </div>
     </div>
   </div>
