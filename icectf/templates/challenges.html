@@ -12,7 +12,7 @@
   <div class="row">
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon">
+        <h3 class="blue center icon">
           <a id="crypt" href="#solutions"><i class="mdi-communication-vpn-key"></i></a>
           <div class="hide solution">
             <p>This is a very simple cipher, the text has only been reversed! Infact, here is the text in its entirety (with proper capitalization):</p>
@@ -21,13 +21,13 @@
             <p><small>Source: picoCTF 2014</small></p>
           </div>
         </h3>
-        <h5 class="center">Cryptography</h5>
+        <h5 class="blue center">Cryptography</h5>
         <p class="light">!ti ees ot elba eb t'now uoy teb i .otpyrc_eruces :ereh galf eht tup neve nac i .eruces yltcefrep era sterces ym won !sdrawkcab si txet siht</p>
       </div>
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon">
+        <h3 class="blue center icon">
           <a id="expl" href="#solutions"><i class="mdi-hardware-security"></i></a>
           <div class="hide solution">
             <p>A basic web exploitation technique is to look at the <b>source code</b>. Viewing the source code of the page shows the hidden flag.</p>
@@ -43,7 +43,7 @@
   <div class="row">
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon">
+        <h3 class="blue center icon">
           <a id="fore" href="#solutions"><i class="mdi-action-search"></i></a>
           <div class="hide solution">
             <p>Most file types have a <b>header</b> and a <b>trailer</b>. Image displaying software will only read to the trailer. Thus, it is possible to conceal information in the binary content of the file after the trailer. Open up the image in a hex editor such as <b>HxD</b> and look at the end to find the flag.</p>
@@ -57,11 +57,11 @@
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon">
+        <h3 class="blue center icon">
           <a id="prog" href="#solutions"><i class="mdi-editor-mode-edit"></i></a>
           <div class="hide solution">
           <p>After calling the function, view its source. Notice that the flag is represented as an integer array. The function iterates through each character of the input and compares its <b>JS Char Code</b> to the respective integer in the array. A one-liner solution is shown below.</p><p><pre>console.log(String.fromCharCode.apply(null, flag));</pre></p>
-          <p><b>Flag: {char_c0des_eh?}</b></p>
+          <p><b>Flag: char_c0des_eh?</b></p>
           <p><small>Source: CamsCTF 2015</small></p>
           </div>
         </h3>
@@ -69,7 +69,7 @@
         <p class="light">The JavaScript function <b>is_correct(input)</b> will check whether the string input is the flag. It may be helpful to call the function in your browser's console. When you pass it the flag, it will tell you the flag. What a useful function.</p>
 
         <script>
-          flag = [ 123, 99, 104, 97, 114, 95, 99, 48, 100, 101, 115, 95, 101, 104, 63, 125 ];
+          flag = [ 99, 104, 97, 114, 95, 99, 48, 100, 101, 115, 95, 101, 104, 63];
           function is_correct(input) {
             for(var i=0; i<flag.length; i++) {
               if(flag[i] !== input.charCodeAt(i)) {
@@ -86,11 +86,11 @@
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon">
+        <h3 class="blue center icon">
           <a id="recon" href="#solutions"><i class="mdi-action-explore"></i></a>
           <div class="hide solution">
             <p>If you perform a Google search for <b>Linux inventor</b>, it will turn up the name "Linus Torvalds" Entering Linus Torvalds isn&apos;t enough though, the system refuses to believe its him without his email! Searching for <b>Linus Torvalds email</b> gives us the email torvalds@osdl.org, which when submitted into the contact page will give you the flag.</p>
-            <p><b>Flag: {i_<3_LiNuX}</b></p>
+            <p><b>Flag: i_&lt;3_LiNuX</b></p>
             <p><small>Source: CamsCTF 2015</small></p>
           </div>
         </h3>
@@ -100,7 +100,7 @@
     </div>
     <div class="col s12 l6">
       <div class="icon-block">
-        <h3 class="center icon">
+        <h3 class="blue center icon">
           <a id="misc" href="#solutions"><i class="mdi-social-share"></i></a>
           <div class="hide solution">
             <p> We know that the password is somehow related to that image... but what is it? Running a reverse image search on Google tells us that the picture is the album cover to Pink Floyd's famous album <a href="https://en.wikipedia.org/wiki/The_Dark_Side_of_the_Moon"><b>The Dark Side of the Moon</b></a>. We guess that that is the password, and you're right!</p>
