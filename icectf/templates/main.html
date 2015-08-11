@@ -1,11 +1,11 @@
 {% set navigation_bar = [
 (url_for("index"), 'Home'),
 (url_for("play"), 'Play'),
+("https://icec.tf/play/scoreboard", 'Scoreboard'),
 (url_for("about"), 'About'),
 (url_for("faq"), 'FAQ'),
 (url_for("contact"), 'Contact'),
-(url_for("sponsors"), 'Sponsors'),
-(url_for("challenges"), 'Challenges')
+(url_for("sponsors"), 'Sponsors')
 ] -%}
 {% set active_page = active_page|default('Home') -%}
 <!DOCTYPE html>
