@@ -2,17 +2,6 @@ renderScoreboardTeamScore = _.template($("#scoreboard-teamscore-template").remov
 renderScoreboardTabs = _.template($("#scoreboard-tabs-template").remove().text())
 renderScoreboard = _.template($("#scoreboard-template").remove().text())
 
-load_teamscore = ->
-  apiCall "GET", "/api/team", {}
-      .done (resp) ->
-    switch resp["status"]
-        when 1
-            $("#scoreboard-teamscore").html renderScoreboardTeamScore({
-                teamscore: resp.data.score
-            })
-      when 0
-          apiNotify(data)
-
 load_scoreboard = ->
 
     $.post "/api/stats/scoreboard", (data) ->
@@ -23,9 +12,9 @@ load_scoreboard = ->
                     renderScoreboard: renderScoreboard
                 })
 
-            window.drawTopTeamsProgressionGraph "#top-team-score-progression-graph"
-        when 0
-            apiNotify(data)
+                window.drawTopTeamsProgressionGraph "#top-team-score-progression-graph"
+            when 0
+                apiNotify(data)
 
 $ ->
     if $("#scoreboard-tabs")
