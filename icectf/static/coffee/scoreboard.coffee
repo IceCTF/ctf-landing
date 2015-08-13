@@ -4,7 +4,7 @@ renderScoreboard = _.template($("#scoreboard-template").remove().text())
 
 load_scoreboard = ->
 
-    $.post "/api/stats/scoreboard", (data) ->
+    $.post "/get/stats/scoreboard", (data) ->
         switch data["status"]
             when 1
                 $("#scoreboard-tabs").html renderScoreboardTabs({
