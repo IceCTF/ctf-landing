@@ -92,10 +92,8 @@ progressionDataToPoints = (data, dataPoints, currentDate = 0) ->
 
 @drawTopTeamsProgressionGraph = (selector) ->
   div = divFromSelector selector
-  apiCall "GET", "/api/stats/top_teams/score_progression", {}
-  .done (data) ->
-    apiCall "GET", "/api/time", {}
-    .done (timedata) ->
+  $.get "/api/stats/top_teams/score_progression", (data) ->
+    $.get "/api/time", (timedata) ->
       if data.data.length >= 2 && $(selector).is(":visible")
         scoreData = (team.score_progression for team in data.data)
 
@@ -118,10 +116,8 @@ progressionDataToPoints = (data, dataPoints, currentDate = 0) ->
 
 @drawTeamProgressionGraph = (selector, container_selector) ->
   div = divFromSelector selector
-  apiCall "GET", "/api/stats/team/score_progression", {}
-  .done (data) ->
-    apiCall "GET", "/api/time", {}
-    .done (timedata) ->
+  $.get "/api/stats/team/score_progression", (data) ->
+    $.get "/api/time", (timedata) ->
 
       if data.status == 1
           if data.data.length > 0
