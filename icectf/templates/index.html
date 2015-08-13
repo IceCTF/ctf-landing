@@ -10,6 +10,33 @@
 {% block content %}
 <div class="container">
   <div class="section">
+      <div class="row">
+          <script type="text/template" id="scoreboard-tabs-template">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#public">Public</a></li>
+                <% if(data.groups.length > 0) { %>
+                <% _.each(data.groups, function(group) { %>
+                    <li><a data-toggle="tab" href="#<%= group.gid %>"><%- group.name %></a></li>
+                <% }); %>
+                <% } %>
+            </ul>
+            <div class="tab-content">
+                <div id="public" class="tab-pane fade in active">
+                <div id="top-team-score-progression-graph"></div>
+                <%= renderScoreboard({scoreboard: data.public}) %>
+                </div>
+                <% _.each(data.groups, function(group) { %>
+                <div id="<%= group.gid %>" class="tab-pane fade">
+                    <%= renderScoreboard({scoreboard: group.scoreboard}) %>
+                </div>
+                <% }); %>
+            </div>
+          </script>
+
+          <a href="https://icec.tf/play/scoreboard">
+            <div id="scoreboard-tabs"></div>
+          </a>
+      </div>
     <div class="row center"><h4 class="col s12">The competition has started!</h4></div>
     <div class="row center">
       <h5 class="col s12 black-text">Click <a href="/play">here</a> to play!</h5>
