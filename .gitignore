@@ -67,3 +67,5 @@ node_modules/
 npm-debug.log
 .tmp
 .DS_Store
+
+icectf/settings.json
