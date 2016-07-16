@@ -58,7 +58,13 @@ $offer_white: #D4D4D4;
     h5 {
         color: $white !important;
     }
+    h6 {
+        color: $white !important;
+    }
 }
+.center-btn {
+text-align: center
+ }
 .icon-block {
     padding: 0 15px;
     &.icon {
