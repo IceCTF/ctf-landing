@@ -1,7 +1,7 @@
 from icectf.routes import icectf, env
 
-from flask.ext.script import Manager
-from flask.ext.assets import ManageAssets
+from flask_script import Manager
+from flask_assets import ManageAssets
 
 manager = Manager(icectf)
 manager.add_command("assets", ManageAssets(env))

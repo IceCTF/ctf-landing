@@ -10,12 +10,12 @@ from setuptools import setup, find_packages
 
 # reqs is a list of requirements
 reqs = [
-    'Flask==0.10.1',
-    'configparser==3.5.0b2',
-    'uWSGI==2.0.9',
-    'pyyaml==3.11',
-    'flask-assets==0.10',
-    'flask-script==2.0.5'
+    'Flask>=0.11.1',
+    'configparser>=3.5.0',
+    'uWSGI>=2.0.12',
+    'pyyaml>=3.11',
+    'flask-assets>=0.11',
+    'flask-script>=2.0.5'
 ]
 
 setup(

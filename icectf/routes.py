@@ -1,8 +1,7 @@
 import re
 import os
 from flask import Flask, redirect, render_template, url_for, request, session, jsonify
-from flask.ext import assets
-from flask.ext.script import Manager
+import flask_assets as assets
 import smtplib
 from email.mime.text import MIMEText
 import json
