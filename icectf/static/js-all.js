@@ -1,34 +1,5 @@
 var divFromSelector, load_scoreboard, maxValuesFromBucketsExtended, progressionDataToPoints, renderScoreboard, renderScoreboardTabs, renderScoreboardTeamScore, teamGraphOptions, timestampsToBuckets, topTeamsGraphOptions;
 
-$(document).ready(function() {
-  return $('form.contact').submit(function() {
-    var form;
-    form = $(this);
-    $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', true);
-    $.ajax({
-      type: 'POST',
-      url: $(this).attr('action'),
-      data: $(this).serialize(),
-      success: function(data) {
-        if (data.success === 1) {
-          form[0].reset();
-          form.find('i, label').removeClass('active');
-          form.find('input').blur();
-        }
-        Materialize.toast(data.message, data.message.length * 500);
-        return setTimeout((function() {
-          return $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', false);
-        }), 500);
-      },
-      error: function(xhr, opts, err) {
-        $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', false);
-        return Materialize.toast("An error occured, please try again later.", 1500);
-      }
-    });
-    return false;
-  });
-});
-
 $(function() {
   $('.button-collapse').sideNav();
   return $('.countdown').TimeCircles({
@@ -228,33 +199,6 @@ this.drawTeamProgressionGraph = function(selector, container_selector) {
   });
 };
 
-renderScoreboardTeamScore = _.template($("#scoreboard-teamscore-template").remove().text());
-
-renderScoreboardTabs = _.template($("#scoreboard-tabs-template").remove().text());
-
-renderScoreboard = _.template($("#scoreboard-template").remove().text());
-
-load_scoreboard = function() {
-  return $.get("/api/stats/scoreboard", function(data) {
-    switch (data["status"]) {
-      case 1:
-        $("#scoreboard-tabs").html(renderScoreboardTabs({
-          data: data.data,
-          renderScoreboard: renderScoreboard
-        }));
-        return window.drawTopTeamsProgressionGraph("#top-team-score-progression-graph");
-      case 0:
-        return apiNotify(data);
-    }
-  });
-};
-
-$(function() {
-  if ($("#scoreboard-tabs")) {
-    return load_scoreboard();
-  }
-});
-
 $(document).ready(function() {
   $('#crypt').click(function() {
     $('#s_content').html($(this).next("div.solution").html());
@@ -284,6 +228,62 @@ $(document).ready(function() {
   return $('#misc').click(function() {
     $('#s_content').html($(this).next("div.solution").html());
     $('#solutions').openModal();
+    return false;
+  });
+});
+
+renderScoreboardTeamScore = _.template($("#scoreboard-teamscore-template").remove().text());
+
+renderScoreboardTabs = _.template($("#scoreboard-tabs-template").remove().text());
+
+renderScoreboard = _.template($("#scoreboard-template").remove().text());
+
+load_scoreboard = function() {
+  return $.get("/api/stats/scoreboard", function(data) {
+    switch (data["status"]) {
+      case 1:
+        $("#scoreboard-tabs").html(renderScoreboardTabs({
+          data: data.data,
+          renderScoreboard: renderScoreboard
+        }));
+        return window.drawTopTeamsProgressionGraph("#top-team-score-progression-graph");
+      case 0:
+        return apiNotify(data);
+    }
+  });
+};
+
+$(function() {
+  if ($("#scoreboard-tabs")) {
+    return load_scoreboard();
+  }
+});
+
+$(document).ready(function() {
+  return $('form.contact').submit(function() {
+    var form;
+    form = $(this);
+    $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', true);
+    $.ajax({
+      type: 'POST',
+      url: $(this).attr('action'),
+      data: $(this).serialize(),
+      success: function(data) {
+        if (data.success === 1) {
+          form[0].reset();
+          form.find('i, label').removeClass('active');
+          form.find('input').blur();
+        }
+        Materialize.toast(data.message, data.message.length * 500);
+        return setTimeout((function() {
+          return $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', false);
+        }), 500);
+      },
+      error: function(xhr, opts, err) {
+        $('button', form).toggleClass('disabled indigo darken-2 waves-effect waves-light').attr('disabled', false);
+        return Materialize.toast("An error occured, please try again later.", 1500);
+      }
+    });
     return false;
   });
 });
