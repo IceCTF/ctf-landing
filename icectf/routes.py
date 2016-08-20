@@ -28,7 +28,10 @@ env.load_path = [
 env.register(
     'js_comp',
     assets.Bundle(
-        'components/js/**/*.js',
+        'components/js/jquery/jquery.min.js',
+        'components/js/underscore/underscore.js',
+        'components/js/materialize/materialize.js',
+        'components/js/timecircles/TimeCircles.js',
         output='components/js/js-comp.js'
     )
 )
